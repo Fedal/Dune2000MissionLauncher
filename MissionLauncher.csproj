@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{399FFD55-BE8A-4299-805E-13E3372E5D98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MissionLauncher</RootNamespace>
+    <AssemblyName>MissionLauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Dune2000Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dune2000Score.cs" />
+    <Compile Include="Dune2000StatsDump.cs" />
+    <Compile Include="Dune2000ThumbnailGenerator.cs" />
+    <Compile Include="Feda\Constants\BackupFiles.cs" />
+    <Compile Include="Feda\Constants\Constants.cs" />
+    <Compile Include="Feda\Enums\Campaign.cs" />
+    <Compile Include="Feda\Interfaces\ICampaignManagerService.cs" />
+    <Compile Include="Feda\Interfaces\IModManager.cs" />
+    <Compile Include="Feda\Services\CampaignManagerService.cs" />
+    <Compile Include="Feda\Services\ModManagerService.cs" />
+    <Compile Include="FunkyFr3sh\Forms\TLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FunkyFr3sh\Forms\TPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FunkyFr3sh\Forms\TRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FunkyFr3sh\Forms\TTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FunkyFr3sh\Utils.cs" />
+    <Compile Include="GUI\AllMissionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AllMissionsForm.Designer.cs">
+      <DependentUpon>AllMissionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dune2000ScoreScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dune2000ScoreScreen.Designer.cs">
+      <DependentUpon>Dune2000ScoreScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EndingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EndingForm.Designer.cs">
+      <DependentUpon>EndingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MissionIntelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MissionIntelForm.Designer.cs">
+      <DependentUpon>MissionIntelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TacticalMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TacticalMapForm.Designer.cs">
+      <DependentUpon>TacticalMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WarOfAssassinsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WarOfAssassinsForm.Designer.cs">
+      <DependentUpon>WarOfAssassinsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WarOfTheLandsraadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WarOfTheLandsraadForm.Designer.cs">
+      <DependentUpon>WarOfTheLandsraadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WarOfAssassinsSandstormForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WarOfAssassinsSandstormForm.Designer.cs">
+      <DependentUpon>WarOfAssassinsSandstormForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Missions.cs" />
+    <Compile Include="Nyerguds.Ini\IniFile.cs" />
+    <Compile Include="Nyerguds.Ini\IniSection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FunkyFr3sh\Dune2000\UibFile.cs" />
+    <Compile Include="GUI\RiseOfTheMercenariesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RiseOfTheMercenariesForm.Designer.cs">
+      <DependentUpon>RiseOfTheMercenariesForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\AllMissionsForm.resx">
+      <DependentUpon>AllMissionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Dune2000ScoreScreen.resx">
+      <DependentUpon>Dune2000ScoreScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EndingForm.resx">
+      <DependentUpon>EndingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MissionIntelForm.resx">
+      <DependentUpon>MissionIntelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TacticalMapForm.resx">
+      <DependentUpon>TacticalMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WarOfAssassinsForm.resx">
+      <DependentUpon>WarOfAssassinsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WarOfTheLandsraadForm.resx">
+      <DependentUpon>WarOfTheLandsraadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WarOfAssassinsSandstormForm.resx">
+      <DependentUpon>WarOfAssassinsSandstormForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI\RiseOfTheMercenariesForm.resx">
+      <DependentUpon>RiseOfTheMercenariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dune2000Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CampaignSelectBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BriefingBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MissionSelectBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RiseOfTheMercenaries\RiseOfTheMercenariesMissionSelectBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarOfAssassins\WarOfAssassinsCampaignSelectionBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarOfAssassins\WarOfAssassinsMissionSelectionBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RiseOfTheMercenaries\RiseOfTheMercenariesBriefingBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopSecret.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormCampaignSelectionBackground.png" />
+    <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormMissionSelectionBackground.png" />
+    <Content Include="Resources\WarOfTheLandsraad\atreides.png" />
+    <Content Include="Resources\WarOfTheLandsraad\WarOfTheLandsraadCampaignScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
