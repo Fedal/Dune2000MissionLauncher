@@ -62,6 +62,10 @@ namespace MissionLauncher.GUI
             DifficultyLevelComboBox.SelectedIndex = 1;
 
             ModManagerService.CurrentCampaign = Feda.Campaign.WarOfTheLandsraad;
+
+            Missions.CurrentCampaignFolder = null;
+            Missions.CurrentModsFolder = null;
+            Missions.CurrentColorsFile = null;
         }
 
         private void FillMissionListBox()

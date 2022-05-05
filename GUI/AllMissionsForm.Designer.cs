@@ -79,7 +79,7 @@
             // 
             // HouseSelectionTab
             // 
-            this.HouseSelectionTab.BackgroundImage = global::MissionLauncher.Properties.Resources.CampaignSelectBackground;
+            this.HouseSelectionTab.BackgroundImage = global::MissionLauncher.Properties.Resources.MissionSelectBackground1;
             this.HouseSelectionTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HouseSelectionTab.Controls.Add(this.MercenariesLabel);
             this.HouseSelectionTab.Controls.Add(this.SmugglersLabel);
@@ -106,7 +106,7 @@
             this.MercenariesLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MercenariesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MercenariesLabel.ForeColor = System.Drawing.Color.Silver;
-            this.MercenariesLabel.Location = new System.Drawing.Point(942, 692);
+            this.MercenariesLabel.Location = new System.Drawing.Point(1055, 692);
             this.MercenariesLabel.Name = "MercenariesLabel";
             this.MercenariesLabel.Size = new System.Drawing.Size(83, 16);
             this.MercenariesLabel.TabIndex = 6;
@@ -123,7 +123,7 @@
             this.SmugglersLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SmugglersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SmugglersLabel.ForeColor = System.Drawing.Color.Silver;
-            this.SmugglersLabel.Location = new System.Drawing.Point(699, 692);
+            this.SmugglersLabel.Location = new System.Drawing.Point(754, 692);
             this.SmugglersLabel.Name = "SmugglersLabel";
             this.SmugglersLabel.Size = new System.Drawing.Size(73, 16);
             this.SmugglersLabel.TabIndex = 5;
@@ -140,7 +140,7 @@
             this.FremenLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FremenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FremenLabel.ForeColor = System.Drawing.Color.Silver;
-            this.FremenLabel.Location = new System.Drawing.Point(384, 692);
+            this.FremenLabel.Location = new System.Drawing.Point(372, 692);
             this.FremenLabel.Name = "FremenLabel";
             this.FremenLabel.Size = new System.Drawing.Size(54, 16);
             this.FremenLabel.TabIndex = 4;
@@ -157,7 +157,7 @@
             this.EmperorLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EmperorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmperorLabel.ForeColor = System.Drawing.Color.Silver;
-            this.EmperorLabel.Location = new System.Drawing.Point(119, 692);
+            this.EmperorLabel.Location = new System.Drawing.Point(47, 692);
             this.EmperorLabel.Name = "EmperorLabel";
             this.EmperorLabel.Size = new System.Drawing.Size(60, 16);
             this.EmperorLabel.TabIndex = 3;
@@ -208,7 +208,7 @@
             this.AtreidesLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AtreidesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AtreidesLabel.ForeColor = System.Drawing.Color.Silver;
-            this.AtreidesLabel.Location = new System.Drawing.Point(161, 588);
+            this.AtreidesLabel.Location = new System.Drawing.Point(174, 588);
             this.AtreidesLabel.Name = "AtreidesLabel";
             this.AtreidesLabel.Size = new System.Drawing.Size(58, 16);
             this.AtreidesLabel.TabIndex = 0;
@@ -325,7 +325,6 @@
             this.MapAvailableLabel.AutoSize = true;
             this.MapAvailableLabel.BackColor = System.Drawing.Color.Green;
             this.MapAvailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MapAvailableLabel.ForeColor = System.Drawing.Color.Silver;
             this.MapAvailableLabel.Location = new System.Drawing.Point(859, 474);
             this.MapAvailableLabel.Name = "MapAvailableLabel";
             this.MapAvailableLabel.Size = new System.Drawing.Size(180, 31);
@@ -339,7 +338,6 @@
             this.IntelAvailableLabel.AutoSize = true;
             this.IntelAvailableLabel.BackColor = System.Drawing.Color.Green;
             this.IntelAvailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntelAvailableLabel.ForeColor = System.Drawing.Color.Silver;
             this.IntelAvailableLabel.Location = new System.Drawing.Point(859, 192);
             this.IntelAvailableLabel.Name = "IntelAvailableLabel";
             this.IntelAvailableLabel.Size = new System.Drawing.Size(180, 31);

@@ -41,16 +41,17 @@ namespace MissionLauncher
 
             if (!GotWritePermissions())
             {
-                if (MessageBox.Show(PermissionError, AccessDeniedCaption, MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show(PermissionError, AccessDeniedCaption, MessageBoxButtons.YesNo) !=
+                    DialogResult.Yes)
+                    return;
+
+                try
                 {
-                    try
-                    {
-                        RunAsAdmin(Application.ExecutablePath);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    RunAsAdmin(Application.ExecutablePath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
                 }
                 return;
             }

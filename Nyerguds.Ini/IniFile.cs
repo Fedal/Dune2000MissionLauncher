@@ -965,6 +965,9 @@ namespace Nyerguds.Ini
 
             try
             {
+                if (stream is null)
+                    return text;
+
                 while ((input = stream.ReadLine()) != null)
                 {
                     text.Add(input);
@@ -972,7 +975,7 @@ namespace Nyerguds.Ini
             }
             finally
             {
-                stream.Close();
+                stream?.Close();
             }
             return text;
         }

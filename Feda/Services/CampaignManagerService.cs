@@ -12,6 +12,7 @@ namespace MissionLauncher.Feda.Services
     public class CampaignManagerService
     {
         private static List<string> _modifiedFiles = new List<string>();
+        private static bool _colorsModified;
 
         private static void CopyAll(DirectoryInfo source, DirectoryInfo target)
         {
@@ -63,6 +64,7 @@ namespace MissionLauncher.Feda.Services
             {
                 File.Copy(targetFile, $"{targetFile}.bak", true);
                 File.Copy(coloursFile, targetFile, true);
+                _colorsModified = true;
             }
             catch(Exception ex)
             {
@@ -72,6 +74,9 @@ namespace MissionLauncher.Feda.Services
 
         public static void RestoreColors()
         {
+            if (!_colorsModified)
+                return;
+
             var dataFolder = Program.DataFolder;
             var targetFile = Path.Combine(dataFolder, "bin", "COLOURS.BIN");
             try
@@ -82,6 +87,8 @@ namespace MissionLauncher.Feda.Services
             {
                 MessageBox.Show(ex.ToString());
             }
+
+            _colorsModified = false;
         }
 
         public static void RestoreFiles()

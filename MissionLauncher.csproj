@@ -35,7 +35,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\Dune2000dev\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -73,6 +73,8 @@
     <Compile Include="Feda\Interfaces\IModManager.cs" />
     <Compile Include="Feda\Services\CampaignManagerService.cs" />
     <Compile Include="Feda\Services\ModManagerService.cs" />
+    <Compile Include="Feda\SplashArc.cs" />
+    <Compile Include="Feda\SplashMission.cs" />
     <Compile Include="FunkyFr3sh\Forms\TLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -128,6 +130,12 @@
     <Compile Include="GUI\WarOfAssassinsForm.Designer.cs">
       <DependentUpon>WarOfAssassinsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\SummersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SummersForm.Designer.cs">
+      <DependentUpon>SummersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\WarOfTheLandsraadForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\WarOfAssassinsForm.resx">
       <DependentUpon>WarOfAssassinsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SummersForm.resx">
+      <DependentUpon>SummersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\WarOfTheLandsraadForm.resx">
       <DependentUpon>WarOfTheLandsraadForm.cs</DependentUpon>
@@ -231,6 +242,12 @@
     <None Include="Resources\TopSecret.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\splashArtScreen.png" />
+    <None Include="Resources\S01V1.png" />
+    <None Include="Resources\d2k_splash_menu_III.png" />
+    <None Include="Resources\d2k_splash_menu_IV.png" />
+    <Content Include="Resources\d2k_splash_menu_V.png" />
+    <Content Include="Resources\MissionSelectBackground.jpg" />
     <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormCampaignSelectionBackground.png" />
     <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormMissionSelectionBackground.png" />
     <Content Include="Resources\WarOfTheLandsraad\atreides.png" />

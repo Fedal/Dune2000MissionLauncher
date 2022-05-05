@@ -20,6 +20,7 @@ namespace MissionLauncher.Feda.Services
         public static Campaign CurrentCampaign = Campaign.AllMissions;
 
         #endregion
+
         #region Public Methods
 
         public static void BackupGameFiles()

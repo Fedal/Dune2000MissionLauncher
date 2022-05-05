@@ -54,6 +54,10 @@ namespace MissionLauncher.GUI
             DifficultyLevelComboBox.Items.Add(Missions.TextUib.GetValue("Normal", "Normal"));
             DifficultyLevelComboBox.Items.Add(Missions.TextUib.GetValue("Hard", "Hard"));
             DifficultyLevelComboBox.SelectedIndex = 1;
+
+            Missions.CurrentCampaignFolder = null;
+            Missions.CurrentModsFolder = null;
+            Missions.CurrentColorsFile = null;
         }
 
         private void FillMissionListBox()

@@ -17,7 +17,6 @@ namespace MissionLauncher.GUI
     public partial class WarOfAssassinsForm : Form
     {
         private string CurrentHouse = "A";
-        private SoundPlayer _soundPlayer;
 
         public WarOfAssassinsForm()
         {
@@ -46,14 +45,6 @@ namespace MissionLauncher.GUI
         private void WarOfAssassinsForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             ModManagerService.RestoreGameFiles();
-            try
-            {
-                _soundPlayer.Stop();
-            }
-            catch
-            {
-                //ignore
-            }
         }
 
         private void WarOfAssassinsForm_Load(object sender, EventArgs e)

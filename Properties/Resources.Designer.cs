@@ -19,7 +19,7 @@ namespace MissionLauncher.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -91,6 +91,36 @@ namespace MissionLauncher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d2k_splash_menu_III {
+            get {
+                object obj = ResourceManager.GetObject("d2k_splash_menu_III", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d2k_splash_menu_IV {
+            get {
+                object obj = ResourceManager.GetObject("d2k_splash_menu_IV", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d2k_splash_menu_V {
+            get {
+                object obj = ResourceManager.GetObject("d2k_splash_menu_V", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Dune2000Icon {
@@ -113,6 +143,16 @@ namespace MissionLauncher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MissionSelectBackground1 {
+            get {
+                object obj = ResourceManager.GetObject("MissionSelectBackground1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RiseOfTheMercenariesBriefingBackground {
             get {
                 object obj = ResourceManager.GetObject("RiseOfTheMercenariesBriefingBackground", resourceCulture);
@@ -126,6 +166,26 @@ namespace MissionLauncher.Properties {
         internal static System.Drawing.Bitmap RiseOfTheMercenariesMissionSelectBackground {
             get {
                 object obj = ResourceManager.GetObject("RiseOfTheMercenariesMissionSelectBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap S01V1 {
+            get {
+                object obj = ResourceManager.GetObject("S01V1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap splashArtScreen {
+            get {
+                object obj = ResourceManager.GetObject("splashArtScreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

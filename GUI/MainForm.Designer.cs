@@ -34,11 +34,13 @@
             this.WarOfAssassinsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.RiseOfTheMercenariesPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.AllMissionsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            this.SummersSolsticePictureBox = new FunkyFr3sh.Forms.TPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfTheLandsraadPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsSandstormPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RiseOfTheMercenariesPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SummersSolsticePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // WarOfTheLandsraadPictureBox
@@ -53,7 +55,7 @@
             this.WarOfTheLandsraadPictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.WarOfTheLandsraadPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WarOfTheLandsraadPictureBox.LabelText = "War of the Landsraad";
-            this.WarOfTheLandsraadPictureBox.Location = new System.Drawing.Point(172, 446);
+            this.WarOfTheLandsraadPictureBox.Location = new System.Drawing.Point(12, 446);
             this.WarOfTheLandsraadPictureBox.Name = "WarOfTheLandsraadPictureBox";
             this.WarOfTheLandsraadPictureBox.Size = new System.Drawing.Size(312, 211);
             this.WarOfTheLandsraadPictureBox.TabIndex = 4;
@@ -132,12 +134,32 @@
             this.AllMissionsPictureBox.TabStop = false;
             this.AllMissionsPictureBox.Click += new System.EventHandler(this.AllMissionsPictureBox_Click);
             // 
+            // SummersSolsticePictureBox
+            // 
+            this.SummersSolsticePictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SummersSolsticePictureBox.BackgroundImage")));
+            this.SummersSolsticePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SummersSolsticePictureBox.BorderColor = System.Drawing.Color.Green;
+            this.SummersSolsticePictureBox.BorderColorHover = System.Drawing.Color.Lime;
+            this.SummersSolsticePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SummersSolsticePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SummersSolsticePictureBox.Image")));
+            this.SummersSolsticePictureBox.LabelColor = System.Drawing.Color.Silver;
+            this.SummersSolsticePictureBox.LabelColorHover = System.Drawing.Color.Lime;
+            this.SummersSolsticePictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SummersSolsticePictureBox.LabelText = "Summer\'s Solstice";
+            this.SummersSolsticePictureBox.Location = new System.Drawing.Point(330, 446);
+            this.SummersSolsticePictureBox.Name = "SummersSolsticePictureBox";
+            this.SummersSolsticePictureBox.Size = new System.Drawing.Size(312, 211);
+            this.SummersSolsticePictureBox.TabIndex = 5;
+            this.SummersSolsticePictureBox.TabStop = false;
+            this.SummersSolsticePictureBox.Click += new System.EventHandler(this.SummersSolsticePictureBox_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(652, 662);
+            this.Controls.Add(this.SummersSolsticePictureBox);
             this.Controls.Add(this.WarOfTheLandsraadPictureBox);
             this.Controls.Add(this.WarOfAssassinsSandstormPictureBox);
             this.Controls.Add(this.WarOfAssassinsPictureBox);
@@ -154,6 +176,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RiseOfTheMercenariesPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SummersSolsticePictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,5 +188,6 @@
         private FunkyFr3sh.Forms.TPictureBox WarOfAssassinsPictureBox;
         private FunkyFr3sh.Forms.TPictureBox WarOfAssassinsSandstormPictureBox;
         private FunkyFr3sh.Forms.TPictureBox WarOfTheLandsraadPictureBox;
+        private FunkyFr3sh.Forms.TPictureBox SummersSolsticePictureBox;
     }
 }
