@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SummersForm));
             this.tTabControl1 = new FunkyFr3sh.Forms.TTabControl();
             this.CampaignSelectionTab = new System.Windows.Forms.TabPage();
+            this.BackLabel = new FunkyFr3sh.Forms.TLabel();
             this.Arc4Label = new FunkyFr3sh.Forms.TLabel();
             this.PictureBoxArc4 = new FunkyFr3sh.Forms.TPictureBox();
             this.Arc3Label = new FunkyFr3sh.Forms.TLabel();
@@ -39,14 +40,6 @@
             this.PictureBoxArc2 = new FunkyFr3sh.Forms.TPictureBox();
             this.Arc1Label = new FunkyFr3sh.Forms.TLabel();
             this.PictureBoxArc1 = new FunkyFr3sh.Forms.TPictureBox();
-            this.tRichTextBox1 = new FunkyFr3sh.Forms.TRichTextBox();
-            this.EndingButton = new System.Windows.Forms.Button();
-            this.BackButton = new System.Windows.Forms.Button();
-            this.OrdosCampaignButton = new System.Windows.Forms.Button();
-            this.HarkonnenCampaignButton = new System.Windows.Forms.Button();
-            this.AtreidesCampaignButton = new System.Windows.Forms.Button();
-            this.SardaukarCampaignButton = new System.Windows.Forms.Button();
-            this.IntroOutroRichTextBox = new FunkyFr3sh.Forms.TRichTextBox();
             this.MissionSelectionTab = new System.Windows.Forms.TabPage();
             this.PictureBoxSplashSmallRight = new FunkyFr3sh.Forms.TPictureBox();
             this.PictureBoxSplashSmallLeft = new FunkyFr3sh.Forms.TPictureBox();
@@ -107,6 +100,7 @@
             this.CampaignSelectionTab.BackColor = System.Drawing.Color.Black;
             this.CampaignSelectionTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CampaignSelectionTab.BackgroundImage")));
             this.CampaignSelectionTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CampaignSelectionTab.Controls.Add(this.BackLabel);
             this.CampaignSelectionTab.Controls.Add(this.Arc4Label);
             this.CampaignSelectionTab.Controls.Add(this.PictureBoxArc4);
             this.CampaignSelectionTab.Controls.Add(this.Arc3Label);
@@ -115,20 +109,27 @@
             this.CampaignSelectionTab.Controls.Add(this.PictureBoxArc2);
             this.CampaignSelectionTab.Controls.Add(this.Arc1Label);
             this.CampaignSelectionTab.Controls.Add(this.PictureBoxArc1);
-            this.CampaignSelectionTab.Controls.Add(this.tRichTextBox1);
-            this.CampaignSelectionTab.Controls.Add(this.EndingButton);
-            this.CampaignSelectionTab.Controls.Add(this.BackButton);
-            this.CampaignSelectionTab.Controls.Add(this.OrdosCampaignButton);
-            this.CampaignSelectionTab.Controls.Add(this.HarkonnenCampaignButton);
-            this.CampaignSelectionTab.Controls.Add(this.AtreidesCampaignButton);
-            this.CampaignSelectionTab.Controls.Add(this.SardaukarCampaignButton);
-            this.CampaignSelectionTab.Controls.Add(this.IntroOutroRichTextBox);
             this.CampaignSelectionTab.ForeColor = System.Drawing.Color.Silver;
             this.CampaignSelectionTab.Location = new System.Drawing.Point(4, 25);
             this.CampaignSelectionTab.Name = "CampaignSelectionTab";
             this.CampaignSelectionTab.Size = new System.Drawing.Size(1357, 759);
             this.CampaignSelectionTab.TabIndex = 9;
             this.CampaignSelectionTab.Text = "CampaignSelection";
+            // 
+            // BackLabel
+            // 
+            this.BackLabel.AutoSize = true;
+            this.BackLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BackLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackLabel.Location = new System.Drawing.Point(648, 636);
+            this.BackLabel.Name = "BackLabel";
+            this.BackLabel.Size = new System.Drawing.Size(60, 25);
+            this.BackLabel.TabIndex = 31;
+            this.BackLabel.Text = "Back";
+            this.BackLabel.TForeColor = System.Drawing.Color.Empty;
+            this.BackLabel.TForeColorHover = System.Drawing.Color.Empty;
+            this.BackLabel.Click += new System.EventHandler(this.BackLabel_Click_1);
             // 
             // Arc4Label
             // 
@@ -237,138 +238,6 @@
             this.PictureBoxArc1.TabIndex = 23;
             this.PictureBoxArc1.TabStop = false;
             this.PictureBoxArc1.Click += new System.EventHandler(this.PictureBoxArc1_Click);
-            // 
-            // tRichTextBox1
-            // 
-            this.tRichTextBox1.AppendLineAddDateTime = false;
-            this.tRichTextBox1.BackColor = System.Drawing.Color.Black;
-            this.tRichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tRichTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tRichTextBox1.ForeColor = System.Drawing.Color.Silver;
-            this.tRichTextBox1.Location = new System.Drawing.Point(262, 580);
-            this.tRichTextBox1.Name = "tRichTextBox1";
-            this.tRichTextBox1.ReadOnly = true;
-            this.tRichTextBox1.Size = new System.Drawing.Size(234, 81);
-            this.tRichTextBox1.TabIndex = 22;
-            this.tRichTextBox1.Text = resources.GetString("tRichTextBox1.Text");
-            // 
-            // EndingButton
-            // 
-            this.EndingButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EndingButton.BackgroundImage")));
-            this.EndingButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.EndingButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EndingButton.FlatAppearance.BorderSize = 0;
-            this.EndingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EndingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EndingButton.ForeColor = System.Drawing.Color.Black;
-            this.EndingButton.Location = new System.Drawing.Point(917, 684);
-            this.EndingButton.Name = "EndingButton";
-            this.EndingButton.Size = new System.Drawing.Size(263, 44);
-            this.EndingButton.TabIndex = 21;
-            this.EndingButton.Text = "Show ending screen";
-            this.EndingButton.UseVisualStyleBackColor = true;
-            this.EndingButton.Click += new System.EventHandler(this.EndingButton_Click);
-            // 
-            // BackButton
-            // 
-            this.BackButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BackButton.BackgroundImage")));
-            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BackButton.FlatAppearance.BorderSize = 0;
-            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.ForeColor = System.Drawing.Color.Black;
-            this.BackButton.Location = new System.Drawing.Point(54, 684);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(263, 44);
-            this.BackButton.TabIndex = 20;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
-            // OrdosCampaignButton
-            // 
-            this.OrdosCampaignButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OrdosCampaignButton.BackgroundImage")));
-            this.OrdosCampaignButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.OrdosCampaignButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.OrdosCampaignButton.FlatAppearance.BorderSize = 0;
-            this.OrdosCampaignButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OrdosCampaignButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrdosCampaignButton.ForeColor = System.Drawing.Color.Black;
-            this.OrdosCampaignButton.Location = new System.Drawing.Point(536, 667);
-            this.OrdosCampaignButton.Name = "OrdosCampaignButton";
-            this.OrdosCampaignButton.Size = new System.Drawing.Size(182, 47);
-            this.OrdosCampaignButton.TabIndex = 19;
-            this.OrdosCampaignButton.Text = "Ordos Campaign";
-            this.OrdosCampaignButton.UseVisualStyleBackColor = true;
-            this.OrdosCampaignButton.Click += new System.EventHandler(this.OrdosCampaignButton_Click);
-            // 
-            // HarkonnenCampaignButton
-            // 
-            this.HarkonnenCampaignButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HarkonnenCampaignButton.BackgroundImage")));
-            this.HarkonnenCampaignButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.HarkonnenCampaignButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HarkonnenCampaignButton.FlatAppearance.BorderSize = 0;
-            this.HarkonnenCampaignButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HarkonnenCampaignButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HarkonnenCampaignButton.ForeColor = System.Drawing.Color.Black;
-            this.HarkonnenCampaignButton.Location = new System.Drawing.Point(735, 610);
-            this.HarkonnenCampaignButton.Name = "HarkonnenCampaignButton";
-            this.HarkonnenCampaignButton.Size = new System.Drawing.Size(148, 57);
-            this.HarkonnenCampaignButton.TabIndex = 18;
-            this.HarkonnenCampaignButton.Text = "Harkonnen Campaign";
-            this.HarkonnenCampaignButton.UseVisualStyleBackColor = true;
-            this.HarkonnenCampaignButton.Click += new System.EventHandler(this.HarkonnenCampaignButton_Click);
-            // 
-            // AtreidesCampaignButton
-            // 
-            this.AtreidesCampaignButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AtreidesCampaignButton.BackgroundImage")));
-            this.AtreidesCampaignButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AtreidesCampaignButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AtreidesCampaignButton.FlatAppearance.BorderSize = 0;
-            this.AtreidesCampaignButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AtreidesCampaignButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AtreidesCampaignButton.ForeColor = System.Drawing.Color.Black;
-            this.AtreidesCampaignButton.Location = new System.Drawing.Point(902, 622);
-            this.AtreidesCampaignButton.Name = "AtreidesCampaignButton";
-            this.AtreidesCampaignButton.Size = new System.Drawing.Size(373, 45);
-            this.AtreidesCampaignButton.TabIndex = 17;
-            this.AtreidesCampaignButton.Text = "Atreides Campaign";
-            this.AtreidesCampaignButton.UseVisualStyleBackColor = true;
-            this.AtreidesCampaignButton.Click += new System.EventHandler(this.AtreidesCampaignButton_Click);
-            // 
-            // SardaukarCampaignButton
-            // 
-            this.SardaukarCampaignButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SardaukarCampaignButton.BackgroundImage")));
-            this.SardaukarCampaignButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SardaukarCampaignButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SardaukarCampaignButton.FlatAppearance.BorderSize = 0;
-            this.SardaukarCampaignButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SardaukarCampaignButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SardaukarCampaignButton.ForeColor = System.Drawing.Color.Black;
-            this.SardaukarCampaignButton.Location = new System.Drawing.Point(536, 616);
-            this.SardaukarCampaignButton.Name = "SardaukarCampaignButton";
-            this.SardaukarCampaignButton.Size = new System.Drawing.Size(144, 45);
-            this.SardaukarCampaignButton.TabIndex = 16;
-            this.SardaukarCampaignButton.Text = "Sardaukar Campaign";
-            this.SardaukarCampaignButton.UseVisualStyleBackColor = true;
-            this.SardaukarCampaignButton.Click += new System.EventHandler(this.SardaukarCampaignButton_Click);
-            // 
-            // IntroOutroRichTextBox
-            // 
-            this.IntroOutroRichTextBox.AppendLineAddDateTime = false;
-            this.IntroOutroRichTextBox.BackColor = System.Drawing.Color.Black;
-            this.IntroOutroRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IntroOutroRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntroOutroRichTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.IntroOutroRichTextBox.Location = new System.Drawing.Point(54, 568);
-            this.IntroOutroRichTextBox.Name = "IntroOutroRichTextBox";
-            this.IntroOutroRichTextBox.ReadOnly = true;
-            this.IntroOutroRichTextBox.Size = new System.Drawing.Size(211, 69);
-            this.IntroOutroRichTextBox.TabIndex = 9;
-            this.IntroOutroRichTextBox.Text = resources.GetString("IntroOutroRichTextBox.Text");
-            this.IntroOutroRichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.BriefingRichTextBox_LinkClicked);
-            this.IntroOutroRichTextBox.TextChanged += new System.EventHandler(this.IntroOutroRichTextBox_TextChanged);
             // 
             // MissionSelectionTab
             // 
@@ -800,13 +669,6 @@
         private System.Windows.Forms.TabPage CampaignSelectionTab;
         private System.Windows.Forms.Button TacticalMapButton;
         private System.Windows.Forms.Button OpenIntelButton;
-        private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.Button OrdosCampaignButton;
-        private System.Windows.Forms.Button HarkonnenCampaignButton;
-        private System.Windows.Forms.Button AtreidesCampaignButton;
-        private System.Windows.Forms.Button SardaukarCampaignButton;
-        private System.Windows.Forms.Button EndingButton;
-        private FunkyFr3sh.Forms.TRichTextBox tRichTextBox1;
         private FunkyFr3sh.Forms.TLabel IntelAvailableLabel;
         private FunkyFr3sh.Forms.TLabel MapAvailableLabel;
         private FunkyFr3sh.Forms.TPictureBox PictureBoxSplashBig;
@@ -825,13 +687,13 @@
         private FunkyFr3sh.Forms.TPictureBox PictureBoxSplashSmallLeft;
         private FunkyFr3sh.Forms.TLabel Arc1Label;
         private FunkyFr3sh.Forms.TPictureBox PictureBoxArc1;
-        private FunkyFr3sh.Forms.TRichTextBox IntroOutroRichTextBox;
         private FunkyFr3sh.Forms.TLabel Arc3Label;
         private FunkyFr3sh.Forms.TPictureBox PictureBoxArc3;
         private FunkyFr3sh.Forms.TLabel Arc2Label;
         private FunkyFr3sh.Forms.TPictureBox PictureBoxArc2;
         private FunkyFr3sh.Forms.TLabel Arc4Label;
         private FunkyFr3sh.Forms.TPictureBox PictureBoxArc4;
+        private FunkyFr3sh.Forms.TLabel BackLabel;
     }
 }
 

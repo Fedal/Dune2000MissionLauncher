@@ -427,50 +427,9 @@ namespace MissionLauncher.GUI
             tTabControl1.SelectTab("MissionSelectionTab");
         }
 
-        private void AtreidesCampaignButton_Click(object sender, EventArgs e)
-        {
-            //MissionCode = "A";
-            //NumberOfMissions = 15;
-            //FillMissionListBox();
-            //tTabControl1.SelectTab("MissionSelectionTab");
-
-            ArcNumber = 1;
-
-            FillSplashView();
-            tTabControl1.SelectTab("MissionSelectionTab");
-        }
-
-        private void HarkonnenCampaignButton_Click(object sender, EventArgs e)
-        {
-            ArcNumber = 3;
-
-            FillSplashView();
-            tTabControl1.SelectTab("MissionSelectionTab");
-        }
-
-        private void OrdosCampaignButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void BackButton_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void EndingButton_Click(object sender, EventArgs e)
-        {
-            var result = MessageBox.Show("SPOILER WARNING: You are about to open a window presenting the ending of the campaign story. It is highly advised to only do so if you have finished ALL the four campaigns! Are you sure you want to go to the ending?", "Ending screen - Spoiler Alert", MessageBoxButtons.YesNo);
-
-            if (result == DialogResult.No)
-                return;
-
-            using (var form = new EndingForm(Ending)) form.ShowDialog();
-        }
-
-        private void IntroOutroRichTextBox_TextChanged(object sender, EventArgs e)
-        {
-
+            Close();
         }
 
         private void LabelNext_Click(object sender, EventArgs e)
@@ -663,6 +622,11 @@ namespace MissionLauncher.GUI
         private void PictureBoxArc4_Click(object sender, EventArgs e)
         {
             Arc4Label_Click(sender, e);
+        }
+
+        private void BackLabel_Click_1(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
