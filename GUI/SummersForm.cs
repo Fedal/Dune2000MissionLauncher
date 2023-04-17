@@ -26,7 +26,7 @@ namespace MissionLauncher.GUI
         private string _rightSideMissionName;
 
         private int ArcNumber;
-        private int MaxArcs = 2;
+        private int MaxArcs = 4;
 
         private List<SplashArc> Arcs;
         private List<SplashMission> AllMissions;
@@ -233,8 +233,8 @@ namespace MissionLauncher.GUI
         {
             var configIni = Path.Combine(_campaignSplashDataFolderName, "config.ini");
             var iniInstance = new IniFile(configIni);
-            var missionsTextFile = Path.Combine(_campaignSplashDataFolderName, "missions.txt");
-            var missions = File.ReadAllLines(missionsTextFile, Encoding.UTF8);
+            //var missionsTextFile = Path.Combine(_campaignSplashDataFolderName, "missions.txt");
+            //var missions = File.ReadAllLines(missionsTextFile, Encoding.UTF8);
 
             var missionList = new List<SplashMission>();
 
@@ -611,6 +611,58 @@ namespace MissionLauncher.GUI
         private void LabelBack_Click(object sender, EventArgs e)
         {
             tTabControl1.SelectTab("CampaignSelectionTab");
+        }
+
+        private void Arc1Label_Click(object sender, EventArgs e)
+        {
+            ArcNumber = 1;
+
+            FillSplashView();
+            tTabControl1.SelectTab("MissionSelectionTab");
+        }
+
+        private void Arc2Label_Click(object sender, EventArgs e)
+        {
+            ArcNumber = 2;
+
+            FillSplashView();
+            tTabControl1.SelectTab("MissionSelectionTab");
+        }
+
+        private void Arc3Label_Click(object sender, EventArgs e)
+        {
+            ArcNumber = 3;
+
+            FillSplashView();
+            tTabControl1.SelectTab("MissionSelectionTab");
+        }
+
+        private void Arc4Label_Click(object sender, EventArgs e)
+        {
+            ArcNumber = 4;
+
+            FillSplashView();
+            tTabControl1.SelectTab("MissionSelectionTab");
+        }
+
+        private void PictureBoxArc1_Click(object sender, EventArgs e)
+        {
+            Arc1Label_Click(sender, e);
+        }
+
+        private void PictureBoxArc2_Click(object sender, EventArgs e)
+        {
+            Arc2Label_Click(sender, e);
+        }
+
+        private void PictureBoxArc3_Click(object sender, EventArgs e)
+        {
+            Arc3Label_Click(sender, e);
+        }
+
+        private void PictureBoxArc4_Click(object sender, EventArgs e)
+        {
+            Arc4Label_Click(sender, e);
         }
     }
 }

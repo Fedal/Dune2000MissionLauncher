@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MissionLauncher</RootNamespace>
     <AssemblyName>MissionLauncher</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -248,6 +248,12 @@
     <None Include="Resources\d2k_splash_menu_IV.png" />
     <Content Include="Resources\d2k_splash_menu_V.png" />
     <Content Include="Resources\MissionSelectBackground.jpg" />
+    <Content Include="Resources\Solstice\D2k_Splash_menu_draft_5.png" />
+    <Content Include="Resources\Solstice\image_four.png" />
+    <Content Include="Resources\Solstice\image_one.png" />
+    <Content Include="Resources\Solstice\image_three.png" />
+    <Content Include="Resources\Solstice\image_two.png" />
+    <Content Include="Resources\Solstice\solstice_aspectRatio.png" />
     <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormCampaignSelectionBackground.png" />
     <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormMissionSelectionBackground.png" />
     <Content Include="Resources\WarOfTheLandsraad\atreides.png" />
@@ -260,6 +266,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
