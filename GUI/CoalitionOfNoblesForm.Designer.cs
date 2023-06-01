@@ -409,7 +409,7 @@
             this.Name = "CoalitionOfNoblesForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "War of the Landsraad";
+            this.Text = "Coalition of Nobles";
             this.Load += new System.EventHandler(this.WarOfLandsraadForm_Load);
             this.tTabControl1.ResumeLayout(false);
             this.CampaignSelectionTab.ResumeLayout(false);

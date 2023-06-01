@@ -133,5 +133,31 @@ namespace MissionLauncher.GUI
 
             Show();
         }
+
+        private void ButlerianPictureBox_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var form = new ButlerianForm())
+            {
+                form.ShowDialog();
+            }
+
+            Show();
+        }
+
+        private void DiscordPictureBox_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.com/invite/Adwfxxe");
+        }
+
+        private void LinkPictureBox_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://forum.dune2k.com");
+        }
+
+        private void YoutubePictureBox_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/@aKaFeda");
+        }
     }
 }

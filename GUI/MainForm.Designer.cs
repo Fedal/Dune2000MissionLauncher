@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.ButlerianPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.CoalitionsButton = new FunkyFr3sh.Forms.TPictureBox();
             this.SummersSolsticePictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.WarOfTheLandsraadPictureBox = new FunkyFr3sh.Forms.TPictureBox();
@@ -36,7 +37,10 @@
             this.WarOfAssassinsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.RiseOfTheMercenariesPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.AllMissionsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
-            this.ButlerianPictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            this.DiscordPictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            this.LinkPictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            this.YoutubePictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ButlerianPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CoalitionsButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SummersSolsticePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfTheLandsraadPictureBox)).BeginInit();
@@ -44,8 +48,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RiseOfTheMercenariesPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ButlerianPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiscordPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LinkPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YoutubePictureBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ButlerianPictureBox
+            // 
+            this.ButlerianPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButlerianPictureBox.BackgroundImage")));
+            this.ButlerianPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ButlerianPictureBox.BorderColor = System.Drawing.Color.Green;
+            this.ButlerianPictureBox.BorderColorHover = System.Drawing.Color.Lime;
+            this.ButlerianPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButlerianPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ButlerianPictureBox.Image")));
+            this.ButlerianPictureBox.LabelColor = System.Drawing.Color.Silver;
+            this.ButlerianPictureBox.LabelColorHover = System.Drawing.Color.Lime;
+            this.ButlerianPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButlerianPictureBox.LabelText = "Butlerian Jihad Trilogy";
+            this.ButlerianPictureBox.Location = new System.Drawing.Point(648, 498);
+            this.ButlerianPictureBox.Name = "ButlerianPictureBox";
+            this.ButlerianPictureBox.Size = new System.Drawing.Size(312, 211);
+            this.ButlerianPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ButlerianPictureBox.TabIndex = 7;
+            this.ButlerianPictureBox.TabStop = false;
+            this.ButlerianPictureBox.Click += new System.EventHandler(this.ButlerianPictureBox_Click);
             // 
             // CoalitionsButton
             // 
@@ -178,24 +204,44 @@
             this.AllMissionsPictureBox.TabStop = false;
             this.AllMissionsPictureBox.Click += new System.EventHandler(this.AllMissionsPictureBox_Click);
             // 
-            // ButlerianPictureBox
+            // DiscordPictureBox
             // 
-            this.ButlerianPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButlerianPictureBox.BackgroundImage")));
-            this.ButlerianPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ButlerianPictureBox.BorderColor = System.Drawing.Color.Green;
-            this.ButlerianPictureBox.BorderColorHover = System.Drawing.Color.Lime;
-            this.ButlerianPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButlerianPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ButlerianPictureBox.Image")));
-            this.ButlerianPictureBox.LabelColor = System.Drawing.Color.Silver;
-            this.ButlerianPictureBox.LabelColorHover = System.Drawing.Color.Lime;
-            this.ButlerianPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButlerianPictureBox.LabelText = "Butlerian Jihad Trilogy";
-            this.ButlerianPictureBox.Location = new System.Drawing.Point(648, 498);
-            this.ButlerianPictureBox.Name = "ButlerianPictureBox";
-            this.ButlerianPictureBox.Size = new System.Drawing.Size(312, 211);
-            this.ButlerianPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ButlerianPictureBox.TabIndex = 7;
-            this.ButlerianPictureBox.TabStop = false;
+            this.DiscordPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DiscordPictureBox.BackgroundImage")));
+            this.DiscordPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.DiscordPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DiscordPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiscordPictureBox.Location = new System.Drawing.Point(12, 8);
+            this.DiscordPictureBox.Name = "DiscordPictureBox";
+            this.DiscordPictureBox.Size = new System.Drawing.Size(63, 50);
+            this.DiscordPictureBox.TabIndex = 8;
+            this.DiscordPictureBox.TabStop = false;
+            this.DiscordPictureBox.Click += new System.EventHandler(this.DiscordPictureBox_Click);
+            // 
+            // LinkPictureBox
+            // 
+            this.LinkPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LinkPictureBox.BackgroundImage")));
+            this.LinkPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LinkPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LinkPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkPictureBox.Location = new System.Drawing.Point(81, 8);
+            this.LinkPictureBox.Name = "LinkPictureBox";
+            this.LinkPictureBox.Size = new System.Drawing.Size(63, 50);
+            this.LinkPictureBox.TabIndex = 9;
+            this.LinkPictureBox.TabStop = false;
+            this.LinkPictureBox.Click += new System.EventHandler(this.LinkPictureBox_Click);
+            // 
+            // YoutubePictureBox
+            // 
+            this.YoutubePictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("YoutubePictureBox.BackgroundImage")));
+            this.YoutubePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.YoutubePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.YoutubePictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YoutubePictureBox.Location = new System.Drawing.Point(150, 8);
+            this.YoutubePictureBox.Name = "YoutubePictureBox";
+            this.YoutubePictureBox.Size = new System.Drawing.Size(63, 50);
+            this.YoutubePictureBox.TabIndex = 10;
+            this.YoutubePictureBox.TabStop = false;
+            this.YoutubePictureBox.Click += new System.EventHandler(this.YoutubePictureBox_Click);
             // 
             // MainForm
             // 
@@ -203,6 +249,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(976, 716);
+            this.Controls.Add(this.YoutubePictureBox);
+            this.Controls.Add(this.LinkPictureBox);
+            this.Controls.Add(this.DiscordPictureBox);
             this.Controls.Add(this.ButlerianPictureBox);
             this.Controls.Add(this.CoalitionsButton);
             this.Controls.Add(this.SummersSolsticePictureBox);
@@ -217,6 +266,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dune 2000 Mission Launcher version 1.3.0 - by Feda and FunkyFr3sh";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ButlerianPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CoalitionsButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SummersSolsticePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfTheLandsraadPictureBox)).EndInit();
@@ -224,7 +274,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RiseOfTheMercenariesPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ButlerianPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiscordPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LinkPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YoutubePictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,5 +291,8 @@
         private FunkyFr3sh.Forms.TPictureBox SummersSolsticePictureBox;
         private FunkyFr3sh.Forms.TPictureBox CoalitionsButton;
         private FunkyFr3sh.Forms.TPictureBox ButlerianPictureBox;
+        private FunkyFr3sh.Forms.TPictureBox DiscordPictureBox;
+        private FunkyFr3sh.Forms.TPictureBox LinkPictureBox;
+        private FunkyFr3sh.Forms.TPictureBox YoutubePictureBox;
     }
 }

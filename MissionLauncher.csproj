@@ -94,6 +94,12 @@
     <Compile Include="GUI\AllMissionsForm.Designer.cs">
       <DependentUpon>AllMissionsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ButlerianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ButlerianForm.Designer.cs">
+      <DependentUpon>ButlerianForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Dune2000ScoreScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </Compile>
     <EmbeddedResource Include="GUI\AllMissionsForm.resx">
       <DependentUpon>AllMissionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ButlerianForm.resx">
+      <DependentUpon>ButlerianForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Dune2000ScoreScreen.resx">
       <DependentUpon>Dune2000ScoreScreen.cs</DependentUpon>

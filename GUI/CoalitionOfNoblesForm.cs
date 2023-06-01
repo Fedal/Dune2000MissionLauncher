@@ -72,13 +72,6 @@ namespace MissionLauncher.GUI
             Missions.CurrentColorsFile = null;
         }
 
-        //private void FillMissionListBox()
-        //{
-        //    MissionListBox.Items.Clear();
-        //    for (int i = 1; i <= NumberOfMissions; i++) MissionListBox.Items.Add(Missions.GetMission(string.Format("WOL_{0}{1}", CurrentHouse, i)).Name);
-        //    MissionListBox.SelectedIndex = 0;
-        //}
-
         private void FillCoalitionMissionList()
         {
             MissionListBox.Items.Clear();
