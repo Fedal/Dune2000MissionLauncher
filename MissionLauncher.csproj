@@ -136,6 +136,12 @@
     <Compile Include="GUI\SummersForm.Designer.cs">
       <DependentUpon>SummersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\CoalitionOfNoblesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CoalitionOfNoblesForm.Designer.cs">
+      <DependentUpon>CoalitionOfNoblesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\WarOfTheLandsraadForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SummersForm.resx">
       <DependentUpon>SummersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CoalitionOfNoblesForm.resx">
+      <DependentUpon>CoalitionOfNoblesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\WarOfTheLandsraadForm.resx">
       <DependentUpon>WarOfTheLandsraadForm.cs</DependentUpon>
@@ -246,6 +255,9 @@
     <None Include="Resources\S01V1.png" />
     <None Include="Resources\d2k_splash_menu_III.png" />
     <None Include="Resources\d2k_splash_menu_IV.png" />
+    <Content Include="Resources\CoalitionOfNobles\coalition_main.png" />
+    <Content Include="Resources\CoalitionOfNobles\coalition_selection.png" />
+    <Content Include="Resources\CoalitionOfNobles\wine button.png" />
     <Content Include="Resources\d2k_splash_menu_V.png" />
     <Content Include="Resources\MissionSelectBackground.jpg" />
     <Content Include="Resources\Solstice\D2k_Splash_menu_draft_5.png" />
@@ -266,7 +278,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Legacy\" />
+    <Folder Include="Resources\Butlerian\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -122,5 +122,16 @@ namespace MissionLauncher.GUI
 
             Show();
         }
+
+        private void CoalitionsButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var form = new CoalitionOfNoblesForm())
+            {
+                form.ShowDialog();
+            }
+
+            Show();
+        }
     }
 }

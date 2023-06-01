@@ -29,19 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.CoalitionsButton = new FunkyFr3sh.Forms.TPictureBox();
             this.SummersSolsticePictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.WarOfTheLandsraadPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.WarOfAssassinsSandstormPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.WarOfAssassinsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.RiseOfTheMercenariesPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.AllMissionsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            this.ButlerianPictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.CoalitionsButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SummersSolsticePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfTheLandsraadPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsSandstormPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RiseOfTheMercenariesPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButlerianPictureBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // CoalitionsButton
+            // 
+            this.CoalitionsButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CoalitionsButton.BackgroundImage")));
+            this.CoalitionsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CoalitionsButton.BorderColor = System.Drawing.Color.Green;
+            this.CoalitionsButton.BorderColorHover = System.Drawing.Color.Lime;
+            this.CoalitionsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CoalitionsButton.Image = ((System.Drawing.Image)(resources.GetObject("CoalitionsButton.Image")));
+            this.CoalitionsButton.LabelColor = System.Drawing.Color.Silver;
+            this.CoalitionsButton.LabelColorHover = System.Drawing.Color.Lime;
+            this.CoalitionsButton.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoalitionsButton.LabelText = "Coalition of Nobles";
+            this.CoalitionsButton.Location = new System.Drawing.Point(330, 498);
+            this.CoalitionsButton.Name = "CoalitionsButton";
+            this.CoalitionsButton.Size = new System.Drawing.Size(312, 211);
+            this.CoalitionsButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CoalitionsButton.TabIndex = 6;
+            this.CoalitionsButton.TabStop = false;
+            this.CoalitionsButton.Click += new System.EventHandler(this.CoalitionsButton_Click);
             // 
             // SummersSolsticePictureBox
             // 
@@ -55,7 +79,7 @@
             this.SummersSolsticePictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.SummersSolsticePictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SummersSolsticePictureBox.LabelText = "Summer\'s Solstice";
-            this.SummersSolsticePictureBox.Location = new System.Drawing.Point(330, 446);
+            this.SummersSolsticePictureBox.Location = new System.Drawing.Point(12, 498);
             this.SummersSolsticePictureBox.Name = "SummersSolsticePictureBox";
             this.SummersSolsticePictureBox.Size = new System.Drawing.Size(312, 211);
             this.SummersSolsticePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +99,7 @@
             this.WarOfTheLandsraadPictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.WarOfTheLandsraadPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WarOfTheLandsraadPictureBox.LabelText = "War of the Landsraad";
-            this.WarOfTheLandsraadPictureBox.Location = new System.Drawing.Point(12, 446);
+            this.WarOfTheLandsraadPictureBox.Location = new System.Drawing.Point(648, 281);
             this.WarOfTheLandsraadPictureBox.Name = "WarOfTheLandsraadPictureBox";
             this.WarOfTheLandsraadPictureBox.Size = new System.Drawing.Size(312, 211);
             this.WarOfTheLandsraadPictureBox.TabIndex = 4;
@@ -93,7 +117,7 @@
             this.WarOfAssassinsSandstormPictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.WarOfAssassinsSandstormPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WarOfAssassinsSandstormPictureBox.LabelText = "War Of Assassins:Sandstorm";
-            this.WarOfAssassinsSandstormPictureBox.Location = new System.Drawing.Point(330, 229);
+            this.WarOfAssassinsSandstormPictureBox.Location = new System.Drawing.Point(330, 281);
             this.WarOfAssassinsSandstormPictureBox.Name = "WarOfAssassinsSandstormPictureBox";
             this.WarOfAssassinsSandstormPictureBox.Size = new System.Drawing.Size(312, 211);
             this.WarOfAssassinsSandstormPictureBox.TabIndex = 3;
@@ -111,7 +135,7 @@
             this.WarOfAssassinsPictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.WarOfAssassinsPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WarOfAssassinsPictureBox.LabelText = "War Of Assassins";
-            this.WarOfAssassinsPictureBox.Location = new System.Drawing.Point(12, 229);
+            this.WarOfAssassinsPictureBox.Location = new System.Drawing.Point(12, 281);
             this.WarOfAssassinsPictureBox.Name = "WarOfAssassinsPictureBox";
             this.WarOfAssassinsPictureBox.Size = new System.Drawing.Size(312, 211);
             this.WarOfAssassinsPictureBox.TabIndex = 2;
@@ -129,9 +153,9 @@
             this.RiseOfTheMercenariesPictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.RiseOfTheMercenariesPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RiseOfTheMercenariesPictureBox.LabelText = "Rise Of The Mercenaries";
-            this.RiseOfTheMercenariesPictureBox.Location = new System.Drawing.Point(330, 12);
+            this.RiseOfTheMercenariesPictureBox.Location = new System.Drawing.Point(648, 64);
             this.RiseOfTheMercenariesPictureBox.Name = "RiseOfTheMercenariesPictureBox";
-            this.RiseOfTheMercenariesPictureBox.Size = new System.Drawing.Size(312, 211);
+            this.RiseOfTheMercenariesPictureBox.Size = new System.Drawing.Size(309, 211);
             this.RiseOfTheMercenariesPictureBox.TabIndex = 1;
             this.RiseOfTheMercenariesPictureBox.TabStop = false;
             this.RiseOfTheMercenariesPictureBox.Click += new System.EventHandler(this.RiseOfTheMercenariesPictureBox_Click);
@@ -147,19 +171,40 @@
             this.AllMissionsPictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.AllMissionsPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AllMissionsPictureBox.LabelText = "All Missions";
-            this.AllMissionsPictureBox.Location = new System.Drawing.Point(12, 12);
+            this.AllMissionsPictureBox.Location = new System.Drawing.Point(12, 64);
             this.AllMissionsPictureBox.Name = "AllMissionsPictureBox";
-            this.AllMissionsPictureBox.Size = new System.Drawing.Size(312, 211);
+            this.AllMissionsPictureBox.Size = new System.Drawing.Size(630, 211);
             this.AllMissionsPictureBox.TabIndex = 0;
             this.AllMissionsPictureBox.TabStop = false;
             this.AllMissionsPictureBox.Click += new System.EventHandler(this.AllMissionsPictureBox_Click);
+            // 
+            // ButlerianPictureBox
+            // 
+            this.ButlerianPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButlerianPictureBox.BackgroundImage")));
+            this.ButlerianPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ButlerianPictureBox.BorderColor = System.Drawing.Color.Green;
+            this.ButlerianPictureBox.BorderColorHover = System.Drawing.Color.Lime;
+            this.ButlerianPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButlerianPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ButlerianPictureBox.Image")));
+            this.ButlerianPictureBox.LabelColor = System.Drawing.Color.Silver;
+            this.ButlerianPictureBox.LabelColorHover = System.Drawing.Color.Lime;
+            this.ButlerianPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButlerianPictureBox.LabelText = "Butlerian Jihad Trilogy";
+            this.ButlerianPictureBox.Location = new System.Drawing.Point(648, 498);
+            this.ButlerianPictureBox.Name = "ButlerianPictureBox";
+            this.ButlerianPictureBox.Size = new System.Drawing.Size(312, 211);
+            this.ButlerianPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ButlerianPictureBox.TabIndex = 7;
+            this.ButlerianPictureBox.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(652, 662);
+            this.ClientSize = new System.Drawing.Size(976, 716);
+            this.Controls.Add(this.ButlerianPictureBox);
+            this.Controls.Add(this.CoalitionsButton);
             this.Controls.Add(this.SummersSolsticePictureBox);
             this.Controls.Add(this.WarOfTheLandsraadPictureBox);
             this.Controls.Add(this.WarOfAssassinsSandstormPictureBox);
@@ -170,14 +215,16 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dune 2000 Mission Launcher version 1.2.0 - by FunkyFr3sh and Feda";
+            this.Text = "Dune 2000 Mission Launcher version 1.3.0 - by Feda and FunkyFr3sh";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.CoalitionsButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SummersSolsticePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfTheLandsraadPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsSandstormPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RiseOfTheMercenariesPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButlerianPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,5 +237,7 @@
         private FunkyFr3sh.Forms.TPictureBox WarOfAssassinsSandstormPictureBox;
         private FunkyFr3sh.Forms.TPictureBox WarOfTheLandsraadPictureBox;
         private FunkyFr3sh.Forms.TPictureBox SummersSolsticePictureBox;
+        private FunkyFr3sh.Forms.TPictureBox CoalitionsButton;
+        private FunkyFr3sh.Forms.TPictureBox ButlerianPictureBox;
     }
 }
