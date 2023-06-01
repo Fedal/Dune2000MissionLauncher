@@ -135,12 +135,12 @@
             // 
             this.Arc4Label.AutoSize = true;
             this.Arc4Label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Arc4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc4Label.Location = new System.Drawing.Point(844, 362);
+            this.Arc4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Arc4Label.Location = new System.Drawing.Point(816, 349);
             this.Arc4Label.Name = "Arc4Label";
-            this.Arc4Label.Size = new System.Drawing.Size(105, 42);
+            this.Arc4Label.Size = new System.Drawing.Size(139, 66);
             this.Arc4Label.TabIndex = 30;
-            this.Arc4Label.Text = "Arc 4";
+            this.Arc4Label.Text = "      Arc 4:\r\nAlliances";
             this.Arc4Label.TForeColor = System.Drawing.Color.Empty;
             this.Arc4Label.TForeColorHover = System.Drawing.Color.Empty;
             this.Arc4Label.Click += new System.EventHandler(this.Arc4Label_Click);
@@ -162,12 +162,12 @@
             // 
             this.Arc3Label.AutoSize = true;
             this.Arc3Label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Arc3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc3Label.Location = new System.Drawing.Point(844, 151);
+            this.Arc3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Arc3Label.Location = new System.Drawing.Point(688, 148);
             this.Arc3Label.Name = "Arc3Label";
-            this.Arc3Label.Size = new System.Drawing.Size(105, 42);
+            this.Arc3Label.Size = new System.Drawing.Size(267, 66);
             this.Arc3Label.TabIndex = 28;
-            this.Arc3Label.Text = "Arc 3";
+            this.Arc3Label.Text = "                      Arc 3:\r\nPlans Within Plans";
             this.Arc3Label.TForeColor = System.Drawing.Color.Empty;
             this.Arc3Label.TForeColorHover = System.Drawing.Color.Empty;
             this.Arc3Label.Click += new System.EventHandler(this.Arc3Label_Click);
@@ -189,12 +189,12 @@
             // 
             this.Arc2Label.AutoSize = true;
             this.Arc2Label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Arc2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc2Label.Location = new System.Drawing.Point(404, 362);
+            this.Arc2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Arc2Label.Location = new System.Drawing.Point(405, 338);
             this.Arc2Label.Name = "Arc2Label";
-            this.Arc2Label.Size = new System.Drawing.Size(105, 42);
+            this.Arc2Label.Size = new System.Drawing.Size(208, 66);
             this.Arc2Label.TabIndex = 26;
-            this.Arc2Label.Text = "Arc 2";
+            this.Arc2Label.Text = "Arc 2:\r\nBattle for Dune";
             this.Arc2Label.TForeColor = System.Drawing.Color.Empty;
             this.Arc2Label.TForeColorHover = System.Drawing.Color.Empty;
             this.Arc2Label.Click += new System.EventHandler(this.Arc2Label_Click);
@@ -216,12 +216,12 @@
             // 
             this.Arc1Label.AutoSize = true;
             this.Arc1Label.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Arc1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc1Label.Location = new System.Drawing.Point(404, 151);
+            this.Arc1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Arc1Label.Location = new System.Drawing.Point(405, 148);
             this.Arc1Label.Name = "Arc1Label";
-            this.Arc1Label.Size = new System.Drawing.Size(105, 42);
+            this.Arc1Label.Size = new System.Drawing.Size(236, 66);
             this.Arc1Label.TabIndex = 24;
-            this.Arc1Label.Text = "Arc 1";
+            this.Arc1Label.Text = "Arc 1:\r\nEmperor\'s Game";
             this.Arc1Label.TForeColor = System.Drawing.Color.Empty;
             this.Arc1Label.TForeColorHover = System.Drawing.Color.Empty;
             this.Arc1Label.Click += new System.EventHandler(this.Arc1Label_Click);
