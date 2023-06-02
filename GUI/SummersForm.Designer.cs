@@ -136,7 +136,7 @@
             this.Arc4Label.AutoSize = true;
             this.Arc4Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc4Label.Location = new System.Drawing.Point(816, 456);
+            this.Arc4Label.Location = new System.Drawing.Point(804, 456);
             this.Arc4Label.Name = "Arc4Label";
             this.Arc4Label.Size = new System.Drawing.Size(139, 66);
             this.Arc4Label.TabIndex = 30;
@@ -151,7 +151,7 @@
             this.PictureBoxArc4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc4.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc4.Location = new System.Drawing.Point(955, 389);
+            this.PictureBoxArc4.Location = new System.Drawing.Point(943, 389);
             this.PictureBoxArc4.Name = "PictureBoxArc4";
             this.PictureBoxArc4.Size = new System.Drawing.Size(260, 203);
             this.PictureBoxArc4.TabIndex = 29;
@@ -163,7 +163,7 @@
             this.Arc3Label.AutoSize = true;
             this.Arc3Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc3Label.Location = new System.Drawing.Point(688, 186);
+            this.Arc3Label.Location = new System.Drawing.Point(676, 186);
             this.Arc3Label.Name = "Arc3Label";
             this.Arc3Label.Size = new System.Drawing.Size(267, 66);
             this.Arc3Label.TabIndex = 28;
@@ -178,7 +178,7 @@
             this.PictureBoxArc3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc3.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc3.Location = new System.Drawing.Point(955, 113);
+            this.PictureBoxArc3.Location = new System.Drawing.Point(943, 113);
             this.PictureBoxArc3.Name = "PictureBoxArc3";
             this.PictureBoxArc3.Size = new System.Drawing.Size(260, 201);
             this.PictureBoxArc3.TabIndex = 27;
@@ -190,7 +190,7 @@
             this.Arc2Label.AutoSize = true;
             this.Arc2Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc2Label.Location = new System.Drawing.Point(405, 445);
+            this.Arc2Label.Location = new System.Drawing.Point(393, 445);
             this.Arc2Label.Name = "Arc2Label";
             this.Arc2Label.Size = new System.Drawing.Size(208, 66);
             this.Arc2Label.TabIndex = 26;
@@ -205,7 +205,7 @@
             this.PictureBoxArc2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc2.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc2.Location = new System.Drawing.Point(138, 389);
+            this.PictureBoxArc2.Location = new System.Drawing.Point(126, 389);
             this.PictureBoxArc2.Name = "PictureBoxArc2";
             this.PictureBoxArc2.Size = new System.Drawing.Size(260, 203);
             this.PictureBoxArc2.TabIndex = 25;
@@ -217,7 +217,7 @@
             this.Arc1Label.AutoSize = true;
             this.Arc1Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc1Label.Location = new System.Drawing.Point(405, 186);
+            this.Arc1Label.Location = new System.Drawing.Point(393, 186);
             this.Arc1Label.Name = "Arc1Label";
             this.Arc1Label.Size = new System.Drawing.Size(236, 66);
             this.Arc1Label.TabIndex = 24;
@@ -232,7 +232,7 @@
             this.PictureBoxArc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc1.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc1.Location = new System.Drawing.Point(138, 113);
+            this.PictureBoxArc1.Location = new System.Drawing.Point(126, 113);
             this.PictureBoxArc1.Name = "PictureBoxArc1";
             this.PictureBoxArc1.Size = new System.Drawing.Size(260, 201);
             this.PictureBoxArc1.TabIndex = 23;
@@ -273,9 +273,9 @@
             this.PictureBoxSplashSmallRight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxSplashSmallRight.Image = global::MissionLauncher.Properties.Resources.S01V1;
             this.PictureBoxSplashSmallRight.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxSplashSmallRight.Location = new System.Drawing.Point(668, 97);
+            this.PictureBoxSplashSmallRight.Location = new System.Drawing.Point(668, 93);
             this.PictureBoxSplashSmallRight.Name = "PictureBoxSplashSmallRight";
-            this.PictureBoxSplashSmallRight.Size = new System.Drawing.Size(256, 505);
+            this.PictureBoxSplashSmallRight.Size = new System.Drawing.Size(256, 512);
             this.PictureBoxSplashSmallRight.TabIndex = 20;
             this.PictureBoxSplashSmallRight.TabStop = false;
             this.PictureBoxSplashSmallRight.Click += new System.EventHandler(this.PictureBoxSplashSmallRight_Click);
@@ -286,9 +286,9 @@
             this.PictureBoxSplashSmallLeft.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxSplashSmallLeft.Image = global::MissionLauncher.Properties.Resources.S01V1;
             this.PictureBoxSplashSmallLeft.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxSplashSmallLeft.Location = new System.Drawing.Point(412, 97);
+            this.PictureBoxSplashSmallLeft.Location = new System.Drawing.Point(412, 93);
             this.PictureBoxSplashSmallLeft.Name = "PictureBoxSplashSmallLeft";
-            this.PictureBoxSplashSmallLeft.Size = new System.Drawing.Size(256, 505);
+            this.PictureBoxSplashSmallLeft.Size = new System.Drawing.Size(256, 512);
             this.PictureBoxSplashSmallLeft.TabIndex = 19;
             this.PictureBoxSplashSmallLeft.TabStop = false;
             this.PictureBoxSplashSmallLeft.Click += new System.EventHandler(this.PictureBoxSplashSmallLeft_Click);
@@ -462,9 +462,9 @@
             this.PictureBoxSplashBig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxSplashBig.Image = global::MissionLauncher.Properties.Resources.S01V1;
             this.PictureBoxSplashBig.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxSplashBig.Location = new System.Drawing.Point(412, 97);
+            this.PictureBoxSplashBig.Location = new System.Drawing.Point(412, 93);
             this.PictureBoxSplashBig.Name = "PictureBoxSplashBig";
-            this.PictureBoxSplashBig.Size = new System.Drawing.Size(512, 505);
+            this.PictureBoxSplashBig.Size = new System.Drawing.Size(512, 509);
             this.PictureBoxSplashBig.TabIndex = 7;
             this.PictureBoxSplashBig.TabStop = false;
             this.PictureBoxSplashBig.Click += new System.EventHandler(this.PictureBoxSplashBig_Click);
@@ -487,7 +487,7 @@
             this.BriefingTab.ForeColor = System.Drawing.Color.Silver;
             this.BriefingTab.Location = new System.Drawing.Point(4, 29);
             this.BriefingTab.Name = "BriefingTab";
-            this.BriefingTab.Size = new System.Drawing.Size(1342, 893);
+            this.BriefingTab.Size = new System.Drawing.Size(1342, 960);
             this.BriefingTab.TabIndex = 8;
             this.BriefingTab.Text = "Briefing";
             // 
