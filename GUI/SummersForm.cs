@@ -184,7 +184,7 @@ namespace MissionLauncher.GUI
 
                 SingleVersionView = true;
 
-                LeftTextBoxTitle.Text = mission.Subtitle;
+                LeftTextBoxTitle.Text = mission.Title;
                 LeftTextBoxSubtitle.Text = mission.PrimaryDescription;
                 LeftTextBoxBottom.Text = mission.SecondaryDescription;
 
