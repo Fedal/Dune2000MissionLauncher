@@ -11,7 +11,7 @@ namespace MissionLauncher.Feda.Services
 {
     public class CampaignManagerService
     {
-        public static List<string> _modifiedFiles = new List<string>();
+        private static List<string> _modifiedFiles = new List<string>();
         private static bool _colorsModified;
 
         public static bool IsWol;
