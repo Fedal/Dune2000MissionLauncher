@@ -165,7 +165,7 @@ namespace MissionLauncher.GUI
 
         private void InfoPictureBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Version changelog:\n\n\n\n[New] Implemented splash art system for campaign windows\n\n[New] Changed the layout and looks of the main view\n\n[New] Added campaign window for Summers' Solstice (author: Fey)\n\n[New] Added campaign window for Coalition of Nobles and its sequel (author: Cm_blast)\n\n[New] Added campaign window for the Butlerian Jihad trilogy (author: Cm_blast)\n\n[Bugfix] Fixed the launcher not reverting mod files in certain scenarios (i.e. colored bars staying on vanilla missions)\n\n[Bugfix] Fixed an issue with colours.bin not being properly restored for mod missions\n\n[Compatibility] Added compatibility solution for War of the Landsraad to work properly with Klofkac's new exe", $"v.{Version} by Feda");
+            MessageBox.Show("Version changelog:\n\n\n\n[New] Implemented splash art system for campaign windows\n\n[New] Changed the layout and looks of the main view\n\n[New] Added campaign window for Summers' Solstice (author: Fey)\n\n[New] Added campaign window for Coalition of Nobles and its sequel (author: Cm_blast)\n\n[New] Added campaign window for the Butlerian Jihad trilogy (author: Cm_blast)\n\n[New] Added buttons for All Missions view to display only the original Westwood missions\n\n[Bugfix] Fixed the launcher not reverting mod files in certain scenarios (i.e. colored bars staying on vanilla missions)\n\n[Bugfix] Fixed an issue with colours.bin not being properly restored for mod missions\n\n[Compatibility] Added compatibility solution for War of the Landsraad to work properly with Klofkac's new exe", $"v.{Version} by Feda");
         }
     }
 }
