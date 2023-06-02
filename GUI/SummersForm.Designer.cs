@@ -496,7 +496,7 @@
             this.MapAvailableLabel.AutoSize = true;
             this.MapAvailableLabel.BackColor = System.Drawing.Color.Green;
             this.MapAvailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MapAvailableLabel.Location = new System.Drawing.Point(1009, 579);
+            this.MapAvailableLabel.Location = new System.Drawing.Point(1005, 617);
             this.MapAvailableLabel.Name = "MapAvailableLabel";
             this.MapAvailableLabel.Size = new System.Drawing.Size(180, 31);
             this.MapAvailableLabel.TabIndex = 16;
@@ -509,7 +509,7 @@
             this.IntelAvailableLabel.AutoSize = true;
             this.IntelAvailableLabel.BackColor = System.Drawing.Color.Green;
             this.IntelAvailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntelAvailableLabel.Location = new System.Drawing.Point(1009, 209);
+            this.IntelAvailableLabel.Location = new System.Drawing.Point(1005, 247);
             this.IntelAvailableLabel.Name = "IntelAvailableLabel";
             this.IntelAvailableLabel.Size = new System.Drawing.Size(180, 31);
             this.IntelAvailableLabel.TabIndex = 15;
@@ -525,7 +525,7 @@
             this.TacticalMapButton.FlatAppearance.BorderSize = 0;
             this.TacticalMapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TacticalMapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TacticalMapButton.Location = new System.Drawing.Point(984, 502);
+            this.TacticalMapButton.Location = new System.Drawing.Point(980, 540);
             this.TacticalMapButton.Name = "TacticalMapButton";
             this.TacticalMapButton.Size = new System.Drawing.Size(240, 74);
             this.TacticalMapButton.TabIndex = 14;
@@ -542,7 +542,7 @@
             this.OpenIntelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.OpenIntelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OpenIntelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenIntelButton.Location = new System.Drawing.Point(984, 243);
+            this.OpenIntelButton.Location = new System.Drawing.Point(980, 281);
             this.OpenIntelButton.Name = "OpenIntelButton";
             this.OpenIntelButton.Size = new System.Drawing.Size(240, 74);
             this.OpenIntelButton.TabIndex = 13;
