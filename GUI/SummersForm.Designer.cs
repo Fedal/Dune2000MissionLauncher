@@ -557,10 +557,10 @@
             this.BriefingRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BriefingRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.BriefingRichTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.BriefingRichTextBox.Location = new System.Drawing.Point(173, 147);
+            this.BriefingRichTextBox.Location = new System.Drawing.Point(173, 149);
             this.BriefingRichTextBox.Name = "BriefingRichTextBox";
             this.BriefingRichTextBox.ReadOnly = true;
-            this.BriefingRichTextBox.Size = new System.Drawing.Size(789, 588);
+            this.BriefingRichTextBox.Size = new System.Drawing.Size(789, 586);
             this.BriefingRichTextBox.TabIndex = 8;
             this.BriefingRichTextBox.Text = "No Briefing";
             this.BriefingRichTextBox.TransparentBackground = true;
