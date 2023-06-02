@@ -143,7 +143,7 @@
             this.SummersSolsticePictureBox.LabelColor = System.Drawing.Color.Silver;
             this.SummersSolsticePictureBox.LabelColorHover = System.Drawing.Color.Lime;
             this.SummersSolsticePictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SummersSolsticePictureBox.LabelText = "Summer\'s Solstice";
+            this.SummersSolsticePictureBox.LabelText = "Summers\' Solstice";
             this.SummersSolsticePictureBox.Location = new System.Drawing.Point(15, 611);
             this.SummersSolsticePictureBox.Name = "SummersSolsticePictureBox";
             this.SummersSolsticePictureBox.Size = new System.Drawing.Size(312, 211);
