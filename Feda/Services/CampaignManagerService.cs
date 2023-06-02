@@ -118,8 +118,13 @@ namespace MissionLauncher.Feda.Services
 
         public static void RestoreFiles()
         {
-            IsWol = false;
+            if (!IsWol)
+            {
+                ProcessFilesForRestore();
+                return;
+            }
 
+            IsWol = false;
             var d2kDir = Program.Path;
             var fileToBackup = Path.Combine(d2kDir, "DUNE2000.EXE");
 
