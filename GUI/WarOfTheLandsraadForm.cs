@@ -100,7 +100,7 @@ namespace MissionLauncher.GUI
 
         private void StartGameLabel_Click(object sender, EventArgs e)
         {
-            Missions.StartMission(DifficultyLevelComboBox.SelectedIndex);
+            Missions.StartMission(DifficultyLevelComboBox.SelectedIndex, true);
             tTabControl1.SelectTab("MissionSelectionTab");
         }
 

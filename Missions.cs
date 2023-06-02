@@ -7,6 +7,7 @@ using FunkyFr3sh;
 using System.Diagnostics;
 using System.IO;
 using MissionLauncher.Feda.Services;
+using System.Windows.Forms;
 
 namespace MissionLauncher
 {
@@ -55,8 +56,9 @@ namespace MissionLauncher
         public static UibFile TextUib;
         public static string MissionPath;
 
-        public static void StartMission(int difficultyLevel)
+        public static void StartMission(int difficultyLevel, bool isWol = false)
         {
+            CampaignManagerService.HandleWolSpecialCase(isWol);
             StartMission(difficultyLevel, CurrentMission);
             CampaignManagerService.RestoreFiles();
             CampaignManagerService.RestoreColors();
