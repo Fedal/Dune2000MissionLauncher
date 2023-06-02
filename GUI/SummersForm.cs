@@ -211,7 +211,7 @@ namespace MissionLauncher.GUI
                     return;
                 }
 
-                LeftTextBoxTitle.Text = firstVersionMission.Subtitle;
+                LeftTextBoxTitle.Text = firstVersionMission.Title;
                 LeftTextBoxSubtitle.Text = firstVersionMission.PrimaryDescription;
                 LeftTextBoxBottom.Text = firstVersionMission.SecondaryDescription;
 
@@ -219,7 +219,7 @@ namespace MissionLauncher.GUI
 
                 _leftSideMissionName = firstVersionMission.FileName;
 
-                RightTextBoxTitle.Text = secondVersionMission.Subtitle;
+                RightTextBoxTitle.Text = secondVersionMission.Title;
                 RightTextBoxSubtitle.Text = secondVersionMission.PrimaryDescription;
                 RightTextBoxBottom.Text = secondVersionMission.SecondaryDescription;
 
