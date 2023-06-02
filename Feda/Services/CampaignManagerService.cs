@@ -162,6 +162,8 @@ namespace MissionLauncher.Feda.Services
                 try
                 {
                     File.Copy(path, targetPath);
+                    _modifiedFiles.Add(targetPath);
+                    return;
                 }
                 catch (Exception ex)
                 {
@@ -191,7 +193,43 @@ namespace MissionLauncher.Feda.Services
             foreach (var file in _modifiedFiles)
             {
                 if (!File.Exists($"{file}.bak"))
-                    continue;
+                {
+                    try
+                    {
+                        //Means it is a new custom file added by the mission, remove it
+                        File.Delete(file);
+                        var fi = new FileInfo(file);
+                        if (fi.Name.StartsWith("UIBB_", StringComparison.OrdinalIgnoreCase) && fi.Extension.Equals(".R16", StringComparison.OrdinalIgnoreCase))
+                        {
+                            var r8File = "";
+                            if (fi.Extension == ".R16")
+                            {
+                                r8File = fi.FullName.Replace(".R16", ".R8");
+                                if (!File.Exists(r8File))
+                                {
+                                    r8File = fi.FullName.Replace(".R16", ".r8");
+                                }
+                            }
+                            else if (fi.Extension == ".r16")
+                            {
+                                r8File = fi.FullName.Replace(".r16", ".r8");
+                                if (!File.Exists(r8File))
+                                {
+                                    r8File = fi.FullName.Replace(".r16", ".R8");
+                                }
+                            }
+
+                            if (File.Exists(r8File))
+                                File.Delete(r8File);
+                        }
+                        continue;
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show($"CUSTOM FILE RESTORE EXCEPTION (screenshot this and send to Feda): \n\n{ex}");
+                        continue;
+                    }
+                }
 
                 try
                 {
@@ -200,7 +238,6 @@ namespace MissionLauncher.Feda.Services
                 catch(Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
-
                 }
             }
 

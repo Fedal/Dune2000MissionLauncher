@@ -87,10 +87,10 @@
             this.tTabControl1.Controls.Add(this.BriefingTab);
             this.tTabControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tTabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.tTabControl1.Location = new System.Drawing.Point(-8, 1);
+            this.tTabControl1.Location = new System.Drawing.Point(1, 12);
             this.tTabControl1.Name = "tTabControl1";
             this.tTabControl1.SelectedIndex = 0;
-            this.tTabControl1.Size = new System.Drawing.Size(1365, 788);
+            this.tTabControl1.Size = new System.Drawing.Size(1350, 993);
             this.tTabControl1.TabIndex = 0;
             this.tTabControl1.TForeColor = System.Drawing.Color.Silver;
             this.tTabControl1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tTabControl1_KeyDown);
@@ -110,9 +110,9 @@
             this.CampaignSelectionTab.Controls.Add(this.Arc1Label);
             this.CampaignSelectionTab.Controls.Add(this.PictureBoxArc1);
             this.CampaignSelectionTab.ForeColor = System.Drawing.Color.Silver;
-            this.CampaignSelectionTab.Location = new System.Drawing.Point(4, 25);
+            this.CampaignSelectionTab.Location = new System.Drawing.Point(4, 29);
             this.CampaignSelectionTab.Name = "CampaignSelectionTab";
-            this.CampaignSelectionTab.Size = new System.Drawing.Size(1357, 759);
+            this.CampaignSelectionTab.Size = new System.Drawing.Size(1342, 960);
             this.CampaignSelectionTab.TabIndex = 9;
             this.CampaignSelectionTab.Text = "CampaignSelection";
             // 
@@ -122,7 +122,7 @@
             this.BackLabel.BackColor = System.Drawing.Color.Transparent;
             this.BackLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackLabel.Location = new System.Drawing.Point(648, 636);
+            this.BackLabel.Location = new System.Drawing.Point(642, 806);
             this.BackLabel.Name = "BackLabel";
             this.BackLabel.Size = new System.Drawing.Size(60, 25);
             this.BackLabel.TabIndex = 31;
@@ -136,7 +136,7 @@
             this.Arc4Label.AutoSize = true;
             this.Arc4Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc4Label.Location = new System.Drawing.Point(816, 349);
+            this.Arc4Label.Location = new System.Drawing.Point(804, 456);
             this.Arc4Label.Name = "Arc4Label";
             this.Arc4Label.Size = new System.Drawing.Size(139, 66);
             this.Arc4Label.TabIndex = 30;
@@ -151,7 +151,7 @@
             this.PictureBoxArc4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc4.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc4.Location = new System.Drawing.Point(955, 282);
+            this.PictureBoxArc4.Location = new System.Drawing.Point(943, 389);
             this.PictureBoxArc4.Name = "PictureBoxArc4";
             this.PictureBoxArc4.Size = new System.Drawing.Size(260, 203);
             this.PictureBoxArc4.TabIndex = 29;
@@ -163,7 +163,7 @@
             this.Arc3Label.AutoSize = true;
             this.Arc3Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc3Label.Location = new System.Drawing.Point(688, 148);
+            this.Arc3Label.Location = new System.Drawing.Point(676, 186);
             this.Arc3Label.Name = "Arc3Label";
             this.Arc3Label.Size = new System.Drawing.Size(267, 66);
             this.Arc3Label.TabIndex = 28;
@@ -178,7 +178,7 @@
             this.PictureBoxArc3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc3.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc3.Location = new System.Drawing.Point(955, 75);
+            this.PictureBoxArc3.Location = new System.Drawing.Point(943, 113);
             this.PictureBoxArc3.Name = "PictureBoxArc3";
             this.PictureBoxArc3.Size = new System.Drawing.Size(260, 201);
             this.PictureBoxArc3.TabIndex = 27;
@@ -190,7 +190,7 @@
             this.Arc2Label.AutoSize = true;
             this.Arc2Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc2Label.Location = new System.Drawing.Point(405, 338);
+            this.Arc2Label.Location = new System.Drawing.Point(393, 445);
             this.Arc2Label.Name = "Arc2Label";
             this.Arc2Label.Size = new System.Drawing.Size(208, 66);
             this.Arc2Label.TabIndex = 26;
@@ -205,7 +205,7 @@
             this.PictureBoxArc2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc2.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc2.Location = new System.Drawing.Point(138, 282);
+            this.PictureBoxArc2.Location = new System.Drawing.Point(126, 389);
             this.PictureBoxArc2.Name = "PictureBoxArc2";
             this.PictureBoxArc2.Size = new System.Drawing.Size(260, 203);
             this.PictureBoxArc2.TabIndex = 25;
@@ -217,7 +217,7 @@
             this.Arc1Label.AutoSize = true;
             this.Arc1Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Arc1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arc1Label.Location = new System.Drawing.Point(405, 148);
+            this.Arc1Label.Location = new System.Drawing.Point(393, 186);
             this.Arc1Label.Name = "Arc1Label";
             this.Arc1Label.Size = new System.Drawing.Size(236, 66);
             this.Arc1Label.TabIndex = 24;
@@ -232,7 +232,7 @@
             this.PictureBoxArc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxArc1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxArc1.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxArc1.Location = new System.Drawing.Point(138, 75);
+            this.PictureBoxArc1.Location = new System.Drawing.Point(126, 113);
             this.PictureBoxArc1.Name = "PictureBoxArc1";
             this.PictureBoxArc1.Size = new System.Drawing.Size(260, 201);
             this.PictureBoxArc1.TabIndex = 23;
@@ -260,10 +260,10 @@
             this.MissionSelectionTab.Controls.Add(this.PictureBoxSplashBig);
             this.MissionSelectionTab.Cursor = System.Windows.Forms.Cursors.Default;
             this.MissionSelectionTab.ForeColor = System.Drawing.Color.Silver;
-            this.MissionSelectionTab.Location = new System.Drawing.Point(4, 25);
+            this.MissionSelectionTab.Location = new System.Drawing.Point(4, 29);
             this.MissionSelectionTab.Name = "MissionSelectionTab";
             this.MissionSelectionTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MissionSelectionTab.Size = new System.Drawing.Size(1357, 759);
+            this.MissionSelectionTab.Size = new System.Drawing.Size(1342, 960);
             this.MissionSelectionTab.TabIndex = 1;
             this.MissionSelectionTab.Text = "MissionSelection";
             // 
@@ -273,9 +273,9 @@
             this.PictureBoxSplashSmallRight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxSplashSmallRight.Image = global::MissionLauncher.Properties.Resources.S01V1;
             this.PictureBoxSplashSmallRight.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxSplashSmallRight.Location = new System.Drawing.Point(676, 73);
+            this.PictureBoxSplashSmallRight.Location = new System.Drawing.Point(668, 93);
             this.PictureBoxSplashSmallRight.Name = "PictureBoxSplashSmallRight";
-            this.PictureBoxSplashSmallRight.Size = new System.Drawing.Size(256, 405);
+            this.PictureBoxSplashSmallRight.Size = new System.Drawing.Size(256, 512);
             this.PictureBoxSplashSmallRight.TabIndex = 20;
             this.PictureBoxSplashSmallRight.TabStop = false;
             this.PictureBoxSplashSmallRight.Click += new System.EventHandler(this.PictureBoxSplashSmallRight_Click);
@@ -286,9 +286,9 @@
             this.PictureBoxSplashSmallLeft.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxSplashSmallLeft.Image = global::MissionLauncher.Properties.Resources.S01V1;
             this.PictureBoxSplashSmallLeft.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxSplashSmallLeft.Location = new System.Drawing.Point(420, 73);
+            this.PictureBoxSplashSmallLeft.Location = new System.Drawing.Point(412, 93);
             this.PictureBoxSplashSmallLeft.Name = "PictureBoxSplashSmallLeft";
-            this.PictureBoxSplashSmallLeft.Size = new System.Drawing.Size(256, 405);
+            this.PictureBoxSplashSmallLeft.Size = new System.Drawing.Size(256, 512);
             this.PictureBoxSplashSmallLeft.TabIndex = 19;
             this.PictureBoxSplashSmallLeft.TabStop = false;
             this.PictureBoxSplashSmallLeft.Click += new System.EventHandler(this.PictureBoxSplashSmallLeft_Click);
@@ -300,7 +300,7 @@
             this.LabelBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LabelBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelBack.ForeColor = System.Drawing.Color.Silver;
-            this.LabelBack.Location = new System.Drawing.Point(620, 632);
+            this.LabelBack.Location = new System.Drawing.Point(614, 804);
             this.LabelBack.Name = "LabelBack";
             this.LabelBack.Size = new System.Drawing.Size(116, 30);
             this.LabelBack.TabIndex = 18;
@@ -317,7 +317,7 @@
             this.LabelPrevArc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LabelPrevArc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPrevArc.ForeColor = System.Drawing.Color.Silver;
-            this.LabelPrevArc.Location = new System.Drawing.Point(105, 545);
+            this.LabelPrevArc.Location = new System.Drawing.Point(106, 699);
             this.LabelPrevArc.Name = "LabelPrevArc";
             this.LabelPrevArc.Size = new System.Drawing.Size(116, 62);
             this.LabelPrevArc.TabIndex = 17;
@@ -334,7 +334,7 @@
             this.LabelNextArc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LabelNextArc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNextArc.ForeColor = System.Drawing.Color.Silver;
-            this.LabelNextArc.Location = new System.Drawing.Point(1128, 545);
+            this.LabelNextArc.Location = new System.Drawing.Point(1114, 699);
             this.LabelNextArc.Name = "LabelNextArc";
             this.LabelNextArc.Size = new System.Drawing.Size(116, 62);
             this.LabelNextArc.TabIndex = 16;
@@ -351,7 +351,7 @@
             this.LabelPrev.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LabelPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPrev.ForeColor = System.Drawing.Color.Silver;
-            this.LabelPrev.Location = new System.Drawing.Point(325, 605);
+            this.LabelPrev.Location = new System.Drawing.Point(322, 768);
             this.LabelPrev.Name = "LabelPrev";
             this.LabelPrev.Size = new System.Drawing.Size(116, 30);
             this.LabelPrev.TabIndex = 15;
@@ -368,7 +368,7 @@
             this.LabelNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LabelNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelNext.ForeColor = System.Drawing.Color.Silver;
-            this.LabelNext.Location = new System.Drawing.Point(908, 605);
+            this.LabelNext.Location = new System.Drawing.Point(897, 768);
             this.LabelNext.Name = "LabelNext";
             this.LabelNext.Size = new System.Drawing.Size(116, 30);
             this.LabelNext.TabIndex = 14;
@@ -384,7 +384,7 @@
             this.RightTextBoxBottom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RightTextBoxBottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RightTextBoxBottom.ForeColor = System.Drawing.SystemColors.Window;
-            this.RightTextBoxBottom.Location = new System.Drawing.Point(938, 361);
+            this.RightTextBoxBottom.Location = new System.Drawing.Point(930, 438);
             this.RightTextBoxBottom.Name = "RightTextBoxBottom";
             this.RightTextBoxBottom.Size = new System.Drawing.Size(316, 108);
             this.RightTextBoxBottom.TabIndex = 13;
@@ -397,7 +397,7 @@
             this.RightTextBoxSubtitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RightTextBoxSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RightTextBoxSubtitle.ForeColor = System.Drawing.SystemColors.Window;
-            this.RightTextBoxSubtitle.Location = new System.Drawing.Point(938, 193);
+            this.RightTextBoxSubtitle.Location = new System.Drawing.Point(930, 237);
             this.RightTextBoxSubtitle.Name = "RightTextBoxSubtitle";
             this.RightTextBoxSubtitle.Size = new System.Drawing.Size(316, 99);
             this.RightTextBoxSubtitle.TabIndex = 12;
@@ -410,7 +410,7 @@
             this.RightTextBoxTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RightTextBoxTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RightTextBoxTitle.ForeColor = System.Drawing.SystemColors.Window;
-            this.RightTextBoxTitle.Location = new System.Drawing.Point(938, 97);
+            this.RightTextBoxTitle.Location = new System.Drawing.Point(930, 141);
             this.RightTextBoxTitle.Name = "RightTextBoxTitle";
             this.RightTextBoxTitle.Size = new System.Drawing.Size(316, 72);
             this.RightTextBoxTitle.TabIndex = 11;
@@ -423,7 +423,7 @@
             this.LeftTextBoxBottom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LeftTextBoxBottom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeftTextBoxBottom.ForeColor = System.Drawing.SystemColors.Window;
-            this.LeftTextBoxBottom.Location = new System.Drawing.Point(98, 361);
+            this.LeftTextBoxBottom.Location = new System.Drawing.Point(99, 438);
             this.LeftTextBoxBottom.Name = "LeftTextBoxBottom";
             this.LeftTextBoxBottom.Size = new System.Drawing.Size(316, 108);
             this.LeftTextBoxBottom.TabIndex = 10;
@@ -436,7 +436,7 @@
             this.LeftTextBoxSubtitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LeftTextBoxSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeftTextBoxSubtitle.ForeColor = System.Drawing.SystemColors.Window;
-            this.LeftTextBoxSubtitle.Location = new System.Drawing.Point(98, 193);
+            this.LeftTextBoxSubtitle.Location = new System.Drawing.Point(99, 237);
             this.LeftTextBoxSubtitle.Name = "LeftTextBoxSubtitle";
             this.LeftTextBoxSubtitle.Size = new System.Drawing.Size(316, 99);
             this.LeftTextBoxSubtitle.TabIndex = 9;
@@ -449,7 +449,7 @@
             this.LeftTextBoxTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LeftTextBoxTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LeftTextBoxTitle.ForeColor = System.Drawing.SystemColors.Window;
-            this.LeftTextBoxTitle.Location = new System.Drawing.Point(98, 97);
+            this.LeftTextBoxTitle.Location = new System.Drawing.Point(99, 141);
             this.LeftTextBoxTitle.Name = "LeftTextBoxTitle";
             this.LeftTextBoxTitle.Size = new System.Drawing.Size(316, 72);
             this.LeftTextBoxTitle.TabIndex = 8;
@@ -462,9 +462,9 @@
             this.PictureBoxSplashBig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxSplashBig.Image = global::MissionLauncher.Properties.Resources.S01V1;
             this.PictureBoxSplashBig.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PictureBoxSplashBig.Location = new System.Drawing.Point(420, 73);
+            this.PictureBoxSplashBig.Location = new System.Drawing.Point(412, 93);
             this.PictureBoxSplashBig.Name = "PictureBoxSplashBig";
-            this.PictureBoxSplashBig.Size = new System.Drawing.Size(512, 405);
+            this.PictureBoxSplashBig.Size = new System.Drawing.Size(512, 509);
             this.PictureBoxSplashBig.TabIndex = 7;
             this.PictureBoxSplashBig.TabStop = false;
             this.PictureBoxSplashBig.Click += new System.EventHandler(this.PictureBoxSplashBig_Click);
@@ -485,9 +485,9 @@
             this.BriefingTab.Controls.Add(this.BackToMissionSelectionLabel);
             this.BriefingTab.Cursor = System.Windows.Forms.Cursors.Default;
             this.BriefingTab.ForeColor = System.Drawing.Color.Silver;
-            this.BriefingTab.Location = new System.Drawing.Point(4, 25);
+            this.BriefingTab.Location = new System.Drawing.Point(4, 29);
             this.BriefingTab.Name = "BriefingTab";
-            this.BriefingTab.Size = new System.Drawing.Size(1357, 759);
+            this.BriefingTab.Size = new System.Drawing.Size(1342, 960);
             this.BriefingTab.TabIndex = 8;
             this.BriefingTab.Text = "Briefing";
             // 
@@ -496,7 +496,7 @@
             this.MapAvailableLabel.AutoSize = true;
             this.MapAvailableLabel.BackColor = System.Drawing.Color.Green;
             this.MapAvailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MapAvailableLabel.Location = new System.Drawing.Point(1009, 476);
+            this.MapAvailableLabel.Location = new System.Drawing.Point(1005, 617);
             this.MapAvailableLabel.Name = "MapAvailableLabel";
             this.MapAvailableLabel.Size = new System.Drawing.Size(180, 31);
             this.MapAvailableLabel.TabIndex = 16;
@@ -509,7 +509,7 @@
             this.IntelAvailableLabel.AutoSize = true;
             this.IntelAvailableLabel.BackColor = System.Drawing.Color.Green;
             this.IntelAvailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IntelAvailableLabel.Location = new System.Drawing.Point(1009, 194);
+            this.IntelAvailableLabel.Location = new System.Drawing.Point(1005, 247);
             this.IntelAvailableLabel.Name = "IntelAvailableLabel";
             this.IntelAvailableLabel.Size = new System.Drawing.Size(180, 31);
             this.IntelAvailableLabel.TabIndex = 15;
@@ -525,7 +525,7 @@
             this.TacticalMapButton.FlatAppearance.BorderSize = 0;
             this.TacticalMapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TacticalMapButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TacticalMapButton.Location = new System.Drawing.Point(984, 399);
+            this.TacticalMapButton.Location = new System.Drawing.Point(980, 540);
             this.TacticalMapButton.Name = "TacticalMapButton";
             this.TacticalMapButton.Size = new System.Drawing.Size(240, 74);
             this.TacticalMapButton.TabIndex = 14;
@@ -542,7 +542,7 @@
             this.OpenIntelButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.OpenIntelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OpenIntelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenIntelButton.Location = new System.Drawing.Point(984, 228);
+            this.OpenIntelButton.Location = new System.Drawing.Point(980, 281);
             this.OpenIntelButton.Name = "OpenIntelButton";
             this.OpenIntelButton.Size = new System.Drawing.Size(240, 74);
             this.OpenIntelButton.TabIndex = 13;
@@ -557,10 +557,10 @@
             this.BriefingRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BriefingRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.BriefingRichTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.BriefingRichTextBox.Location = new System.Drawing.Point(173, 123);
+            this.BriefingRichTextBox.Location = new System.Drawing.Point(173, 149);
             this.BriefingRichTextBox.Name = "BriefingRichTextBox";
             this.BriefingRichTextBox.ReadOnly = true;
-            this.BriefingRichTextBox.Size = new System.Drawing.Size(789, 459);
+            this.BriefingRichTextBox.Size = new System.Drawing.Size(789, 586);
             this.BriefingRichTextBox.TabIndex = 8;
             this.BriefingRichTextBox.Text = "No Briefing";
             this.BriefingRichTextBox.TransparentBackground = true;
@@ -570,7 +570,7 @@
             // 
             this.DifficultyLevelLabel.BackColor = System.Drawing.Color.Transparent;
             this.DifficultyLevelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DifficultyLevelLabel.Location = new System.Drawing.Point(482, 691);
+            this.DifficultyLevelLabel.Location = new System.Drawing.Point(457, 877);
             this.DifficultyLevelLabel.Name = "DifficultyLevelLabel";
             this.DifficultyLevelLabel.Size = new System.Drawing.Size(200, 20);
             this.DifficultyLevelLabel.TabIndex = 6;
@@ -585,7 +585,7 @@
             this.DifficultyLevelComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DifficultyLevelComboBox.ForeColor = System.Drawing.Color.Silver;
             this.DifficultyLevelComboBox.FormattingEnabled = true;
-            this.DifficultyLevelComboBox.Location = new System.Drawing.Point(688, 691);
+            this.DifficultyLevelComboBox.Location = new System.Drawing.Point(663, 877);
             this.DifficultyLevelComboBox.Name = "DifficultyLevelComboBox";
             this.DifficultyLevelComboBox.Size = new System.Drawing.Size(111, 21);
             this.DifficultyLevelComboBox.TabIndex = 5;
@@ -597,7 +597,7 @@
             this.StartGameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartGameLabel.ForeColor = System.Drawing.Color.Silver;
-            this.StartGameLabel.Location = new System.Drawing.Point(1062, 673);
+            this.StartGameLabel.Location = new System.Drawing.Point(1049, 854);
             this.StartGameLabel.Name = "StartGameLabel";
             this.StartGameLabel.Size = new System.Drawing.Size(102, 16);
             this.StartGameLabel.TabIndex = 3;
@@ -614,7 +614,7 @@
             this.BackToMissionSelectionLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackToMissionSelectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackToMissionSelectionLabel.ForeColor = System.Drawing.Color.Silver;
-            this.BackToMissionSelectionLabel.Location = new System.Drawing.Point(200, 673);
+            this.BackToMissionSelectionLabel.Location = new System.Drawing.Point(193, 854);
             this.BackToMissionSelectionLabel.Name = "BackToMissionSelectionLabel";
             this.BackToMissionSelectionLabel.Size = new System.Drawing.Size(78, 16);
             this.BackToMissionSelectionLabel.TabIndex = 2;
@@ -630,7 +630,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1351, 782);
+            this.ClientSize = new System.Drawing.Size(1351, 1005);
             this.Controls.Add(this.tTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
