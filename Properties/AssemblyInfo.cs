@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MissionLauncher")]
 [assembly: AssemblyDescription("Dune 2000 Mission Launcher")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("FunkyFr3sh")]
+[assembly: AssemblyCompany("Feda")]
 [assembly: AssemblyProduct("MissionLauncher")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

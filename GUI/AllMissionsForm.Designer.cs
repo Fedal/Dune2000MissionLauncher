@@ -114,9 +114,9 @@
             this.HarkOriginalLabel.ForeColor = System.Drawing.Color.Silver;
             this.HarkOriginalLabel.Location = new System.Drawing.Point(942, 70);
             this.HarkOriginalLabel.Name = "HarkOriginalLabel";
-            this.HarkOriginalLabel.Size = new System.Drawing.Size(53, 16);
+            this.HarkOriginalLabel.Size = new System.Drawing.Size(59, 16);
             this.HarkOriginalLabel.TabIndex = 9;
-            this.HarkOriginalLabel.Text = "Original";
+            this.HarkOriginalLabel.Text = "  Original";
             this.HarkOriginalLabel.TForeColor = System.Drawing.Color.Silver;
             this.HarkOriginalLabel.TForeColorHover = System.Drawing.Color.Lime;
             this.HarkOriginalLabel.Click += new System.EventHandler(this.HarkOriginalLabel_Click);
@@ -129,11 +129,11 @@
             this.OrdOriginalLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OrdOriginalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OrdOriginalLabel.ForeColor = System.Drawing.Color.Silver;
-            this.OrdOriginalLabel.Location = new System.Drawing.Point(566, 70);
+            this.OrdOriginalLabel.Location = new System.Drawing.Point(557, 70);
             this.OrdOriginalLabel.Name = "OrdOriginalLabel";
-            this.OrdOriginalLabel.Size = new System.Drawing.Size(53, 16);
+            this.OrdOriginalLabel.Size = new System.Drawing.Size(56, 16);
             this.OrdOriginalLabel.TabIndex = 8;
-            this.OrdOriginalLabel.Text = "Original";
+            this.OrdOriginalLabel.Text = " Original";
             this.OrdOriginalLabel.TForeColor = System.Drawing.Color.Silver;
             this.OrdOriginalLabel.TForeColorHover = System.Drawing.Color.Lime;
             this.OrdOriginalLabel.Click += new System.EventHandler(this.OrdOriginalLabel_Click);

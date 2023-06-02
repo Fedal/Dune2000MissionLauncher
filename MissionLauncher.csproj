@@ -52,7 +52,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\Dune2000Icon.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\mission_launcher_icon_64.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -264,11 +264,14 @@
     <None Include="Resources\S01V1.png" />
     <None Include="Resources\d2k_splash_menu_III.png" />
     <None Include="Resources\d2k_splash_menu_IV.png" />
+    <Content Include="mission_launcher_icon_64.ico" />
     <Content Include="Resources\CoalitionOfNobles\coalition_main.png" />
     <Content Include="Resources\CoalitionOfNobles\coalition_selection.png" />
     <Content Include="Resources\CoalitionOfNobles\wine button.png" />
     <Content Include="Resources\d2k_splash_menu_V.png" />
+    <None Include="Resources\Launcher64.ico" />
     <Content Include="Resources\MissionSelectBackground.jpg" />
+    <None Include="Resources\mission_launcher_icon_64.ico" />
     <Content Include="Resources\Solstice\D2k_Splash_menu_draft_5.png" />
     <Content Include="Resources\Solstice\image_four.png" />
     <Content Include="Resources\Solstice\image_one.png" />
