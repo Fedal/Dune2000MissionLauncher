@@ -127,6 +127,7 @@ namespace MissionLauncher.Feda.Services
             {
                 var backupFilePath = Path.Combine(d2kDir, "D2K.BACKUP");
                 File.Copy(backupFilePath, fileToBackup, true);
+                File.Delete(backupFilePath);
             }
             catch (Exception ex)
             {

@@ -39,6 +39,7 @@
             this.WarOfAssassinsSandstormPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.WarOfAssassinsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             this.AllMissionsPictureBox = new FunkyFr3sh.Forms.TPictureBox();
+            this.InfoPictureBox = new FunkyFr3sh.Forms.TPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.YoutubePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LinkPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiscordPictureBox)).BeginInit();
@@ -49,6 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsSandstormPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // YoutubePictureBox
@@ -223,12 +225,26 @@
             this.AllMissionsPictureBox.TabStop = false;
             this.AllMissionsPictureBox.Click += new System.EventHandler(this.AllMissionsPictureBox_Click);
             // 
+            // InfoPictureBox
+            // 
+            this.InfoPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("InfoPictureBox.BackgroundImage")));
+            this.InfoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.InfoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InfoPictureBox.LabelFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoPictureBox.Location = new System.Drawing.Point(219, 8);
+            this.InfoPictureBox.Name = "InfoPictureBox";
+            this.InfoPictureBox.Size = new System.Drawing.Size(63, 50);
+            this.InfoPictureBox.TabIndex = 11;
+            this.InfoPictureBox.TabStop = false;
+            this.InfoPictureBox.Click += new System.EventHandler(this.InfoPictureBox_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(976, 833);
+            this.Controls.Add(this.InfoPictureBox);
             this.Controls.Add(this.YoutubePictureBox);
             this.Controls.Add(this.LinkPictureBox);
             this.Controls.Add(this.DiscordPictureBox);
@@ -255,6 +271,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsSandstormPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarOfAssassinsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllMissionsPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,5 +288,6 @@
         private FunkyFr3sh.Forms.TPictureBox DiscordPictureBox;
         private FunkyFr3sh.Forms.TPictureBox LinkPictureBox;
         private FunkyFr3sh.Forms.TPictureBox YoutubePictureBox;
+        private FunkyFr3sh.Forms.TPictureBox InfoPictureBox;
     }
 }
