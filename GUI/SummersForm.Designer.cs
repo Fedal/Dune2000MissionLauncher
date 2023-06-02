@@ -557,10 +557,10 @@
             this.BriefingRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BriefingRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.BriefingRichTextBox.ForeColor = System.Drawing.Color.Silver;
-            this.BriefingRichTextBox.Location = new System.Drawing.Point(173, 123);
+            this.BriefingRichTextBox.Location = new System.Drawing.Point(173, 147);
             this.BriefingRichTextBox.Name = "BriefingRichTextBox";
             this.BriefingRichTextBox.ReadOnly = true;
-            this.BriefingRichTextBox.Size = new System.Drawing.Size(789, 563);
+            this.BriefingRichTextBox.Size = new System.Drawing.Size(789, 588);
             this.BriefingRichTextBox.TabIndex = 8;
             this.BriefingRichTextBox.Text = "No Briefing";
             this.BriefingRichTextBox.TransparentBackground = true;
@@ -570,7 +570,7 @@
             // 
             this.DifficultyLevelLabel.BackColor = System.Drawing.Color.Transparent;
             this.DifficultyLevelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DifficultyLevelLabel.Location = new System.Drawing.Point(455, 824);
+            this.DifficultyLevelLabel.Location = new System.Drawing.Point(457, 877);
             this.DifficultyLevelLabel.Name = "DifficultyLevelLabel";
             this.DifficultyLevelLabel.Size = new System.Drawing.Size(200, 20);
             this.DifficultyLevelLabel.TabIndex = 6;
@@ -585,7 +585,7 @@
             this.DifficultyLevelComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DifficultyLevelComboBox.ForeColor = System.Drawing.Color.Silver;
             this.DifficultyLevelComboBox.FormattingEnabled = true;
-            this.DifficultyLevelComboBox.Location = new System.Drawing.Point(661, 824);
+            this.DifficultyLevelComboBox.Location = new System.Drawing.Point(663, 877);
             this.DifficultyLevelComboBox.Name = "DifficultyLevelComboBox";
             this.DifficultyLevelComboBox.Size = new System.Drawing.Size(111, 21);
             this.DifficultyLevelComboBox.TabIndex = 5;
@@ -597,7 +597,7 @@
             this.StartGameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartGameLabel.ForeColor = System.Drawing.Color.Silver;
-            this.StartGameLabel.Location = new System.Drawing.Point(1050, 794);
+            this.StartGameLabel.Location = new System.Drawing.Point(1049, 854);
             this.StartGameLabel.Name = "StartGameLabel";
             this.StartGameLabel.Size = new System.Drawing.Size(102, 16);
             this.StartGameLabel.TabIndex = 3;
@@ -614,7 +614,7 @@
             this.BackToMissionSelectionLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackToMissionSelectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackToMissionSelectionLabel.ForeColor = System.Drawing.Color.Silver;
-            this.BackToMissionSelectionLabel.Location = new System.Drawing.Point(199, 794);
+            this.BackToMissionSelectionLabel.Location = new System.Drawing.Point(193, 854);
             this.BackToMissionSelectionLabel.Name = "BackToMissionSelectionLabel";
             this.BackToMissionSelectionLabel.Size = new System.Drawing.Size(78, 16);
             this.BackToMissionSelectionLabel.TabIndex = 2;
