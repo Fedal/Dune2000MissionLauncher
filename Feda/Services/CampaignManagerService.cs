@@ -14,6 +14,31 @@ namespace MissionLauncher.Feda.Services
         private static List<string> _modifiedFiles = new List<string>();
         private static bool _colorsModified;
 
+        public static bool IsWol;
+
+        public static void HandleWolSpecialCase(bool isWol)
+        {
+            IsWol = isWol;
+            if (!IsWol)
+                return;
+
+            var d2kDir = Program.Path;
+            var legacyFile = Path.Combine(d2kDir, "CustomCampaignData", "WarOfTheLandsraad", "Legacy", "DUNE2000.EXE");
+            var fileToBackup = Path.Combine(d2kDir, "DUNE2000.EXE");
+
+            try
+            {
+                var backupFilePath = Path.Combine(d2kDir, "D2K.BACKUP");
+                File.Copy(fileToBackup, backupFilePath, true);
+                File.Copy(legacyFile, fileToBackup, true);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return;
+            }
+        }
+
         private static void CopyAll(DirectoryInfo source, DirectoryInfo target)
         {
             Directory.CreateDirectory(target.FullName);
@@ -93,6 +118,27 @@ namespace MissionLauncher.Feda.Services
 
         public static void RestoreFiles()
         {
+            if (!IsWol)
+            {
+                ProcessFilesForRestore();
+                return;
+            }
+
+            IsWol = false;
+            var d2kDir = Program.Path;
+            var fileToBackup = Path.Combine(d2kDir, "DUNE2000.EXE");
+
+            try
+            {
+                var backupFilePath = Path.Combine(d2kDir, "D2K.BACKUP");
+                File.Copy(backupFilePath, fileToBackup, true);
+                File.Delete(backupFilePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
             ProcessFilesForRestore();
         }
 

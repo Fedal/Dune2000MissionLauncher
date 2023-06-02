@@ -13,6 +13,9 @@ namespace MissionLauncher.GUI
     {
         private readonly string _statsDmpPath = Path.Combine(Program.Path, "stats.dmp");
 
+        public const string Version = "1.3.0";
+        public string Title = $"Dune 2000 Mission Launcher - version: {Version}";
+
         public MainForm()
         {
             Icon = Resources.Dune2000Icon;
@@ -121,6 +124,48 @@ namespace MissionLauncher.GUI
             }
 
             Show();
+        }
+
+        private void CoalitionsButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var form = new CoalitionOfNoblesForm())
+            {
+                form.ShowDialog();
+            }
+
+            Show();
+        }
+
+        private void ButlerianPictureBox_Click(object sender, EventArgs e)
+        {
+            Hide();
+            using (var form = new ButlerianForm())
+            {
+                form.ShowDialog();
+            }
+
+            Show();
+        }
+
+        private void DiscordPictureBox_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.com/invite/Adwfxxe");
+        }
+
+        private void LinkPictureBox_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://forum.dune2k.com");
+        }
+
+        private void YoutubePictureBox_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/@aKaFeda");
+        }
+
+        private void InfoPictureBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Version changelog:\n\n\n\n[New] Implemented splash art system for campaign windows\n\n[New] Changed the layout and looks of the main view\n\n[New] Added campaign window for Summers' Solstice (author: Fey)\n\n[New] Added campaign window for Coalition of Nobles and its sequel (author: Cm_blast)\n\n[New] Added campaign window for the Butlerian Jihad trilogy (author: Cm_blast)\n\n[New] Added buttons for All Missions view to display only the original Westwood missions\n\n[Bugfix] Fixed the launcher not reverting mod files in certain scenarios (i.e. colored bars staying on vanilla missions)\n\n[Bugfix] Fixed an issue with colours.bin not being properly restored for mod missions\n\n[Compatibility] Added compatibility solution for War of the Landsraad to work properly with Klofkac's new exe", $"v.{Version} by Feda");
         }
     }
 }

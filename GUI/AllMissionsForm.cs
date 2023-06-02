@@ -30,6 +30,11 @@ namespace MissionLauncher.GUI
         private Image Image4;
 
         private Mission Mission;
+        private Dictionary<int, Mission> _atrOrigMissionDictionary;
+        private Dictionary<int, Mission> _harkOrigMissionDictionary;
+        private Dictionary<int, Mission> _ordOrigMissionDictionary;
+
+        private bool _onlyOriginals;
 
         public AllMissionsForm()
         {
@@ -67,10 +72,95 @@ namespace MissionLauncher.GUI
             MapPreviewPictureBox.BackColor = Color.FromArgb(50, Color.Black);
         }
 
-        private void ShowSelectMissionTab(int SideId)
+        private void ShowSelectMissionTab(int SideId, bool onlyOriginals = false)
         {
             CurrentSideId = SideId;
             MissionListBox.Items.Clear();
+            _onlyOriginals = onlyOriginals;
+
+            if (_onlyOriginals)
+            {
+                switch (CurrentSideId)
+                {
+                    case 0:
+                        _atrOrigMissionDictionary = new Dictionary<int, Mission>
+                        {
+                            { 0, Missions.GetMission("A1V1") },
+                            { 1, Missions.GetMission("A1V2") },
+                            { 2, Missions.GetMission("A2V1") },
+                            { 3, Missions.GetMission("A2V2") },
+                            { 4, Missions.GetMission("A3V1") },
+                            { 5, Missions.GetMission("A3V2") },
+                            { 6, Missions.GetMission("A4V1") },
+                            { 7, Missions.GetMission("A5V1") },
+                            { 8, Missions.GetMission("A6V1") },
+                            { 9, Missions.GetMission("A6V2") },
+                            { 10, Missions.GetMission("A7V1") },
+                            { 11, Missions.GetMission("A8V1") },
+                            { 12, Missions.GetMission("A9V1") },
+                            { 13, Missions.GetMission("A9V2") }
+                        };
+
+                        foreach (var mission in _atrOrigMissionDictionary.Values)
+                        {
+                            MissionListBox.Items.Add(mission.Name);
+                        }
+                        break;
+                    case 1:
+                        _harkOrigMissionDictionary = new Dictionary<int, Mission>
+                        {
+                            { 0, Missions.GetMission("H1V1") },
+                            { 1, Missions.GetMission("H1V2") },
+                            { 2, Missions.GetMission("H2V1") },
+                            { 3, Missions.GetMission("H2V2") },
+                            { 4, Missions.GetMission("H3V1") },
+                            { 5, Missions.GetMission("H3V2") },
+                            { 6, Missions.GetMission("H4V1") },
+                            { 7, Missions.GetMission("H5V1") },
+                            { 8, Missions.GetMission("H6V1") },
+                            { 9, Missions.GetMission("H6V2") },
+                            { 10, Missions.GetMission("H7V1") },
+                            { 11, Missions.GetMission("H8V1") },
+                            { 12, Missions.GetMission("H9V1") },
+                            { 13, Missions.GetMission("H9V2") }
+                        };
+
+                        foreach (var mission in _harkOrigMissionDictionary.Values)
+                        {
+                            MissionListBox.Items.Add(mission.Name);
+                        }
+                        break;
+                    case 2:
+                        _ordOrigMissionDictionary = new Dictionary<int, Mission>
+                        {
+                            { 0, Missions.GetMission("O1V1") },
+                            { 1, Missions.GetMission("O1V2") },
+                            { 2, Missions.GetMission("O2V1") },
+                            { 3, Missions.GetMission("O2V2") },
+                            { 4, Missions.GetMission("O3V1") },
+                            { 5, Missions.GetMission("O3V2") },
+                            { 6, Missions.GetMission("O4V1") },
+                            { 7, Missions.GetMission("O5V1") },
+                            { 8, Missions.GetMission("O6V1") },
+                            { 9, Missions.GetMission("O6V2") },
+                            { 10, Missions.GetMission("O7V1") },
+                            { 11, Missions.GetMission("O8V1") },
+                            { 12, Missions.GetMission("O9V1") },
+                            { 13, Missions.GetMission("O9V2") }
+                        };
+
+                        foreach (var mission in _ordOrigMissionDictionary.Values)
+                        {
+                            MissionListBox.Items.Add(mission.Name);
+                        }
+                        break;
+                }
+
+                MissionListBox.SelectedIndex = 0;
+                tTabControl1.SelectTab("MissionSelectionTab");
+                return;
+            }
+
             switch (SideId)
             {
                 case 0: foreach (var mission in Missions.AtreidesMissions) MissionListBox.Items.Add(mission.Name); break;
@@ -97,16 +187,38 @@ namespace MissionLauncher.GUI
 
             if (MissionListBox.SelectedIndex != -1)
             {
-                switch (CurrentSideId)
+                if (_onlyOriginals)
                 {
-                    case 0: Missions.CurrentMission = Missions.AtreidesMissions[MissionListBox.SelectedIndex]; break;
-                    case 1: Missions.CurrentMission = Missions.HarkonnenMissions[MissionListBox.SelectedIndex]; break;
-                    case 2: Missions.CurrentMission = Missions.OrdosMissions[MissionListBox.SelectedIndex]; break;
-                    case 3: Missions.CurrentMission = Missions.EmperorMissions[MissionListBox.SelectedIndex]; break;
-                    case 4: Missions.CurrentMission = Missions.FremenMissions[MissionListBox.SelectedIndex]; break;
-                    case 5: Missions.CurrentMission = Missions.SmugglersMissions[MissionListBox.SelectedIndex]; break;
-                    case 6: Missions.CurrentMission = Missions.MercenariesMissions[MissionListBox.SelectedIndex]; break;
+                    switch (CurrentSideId)
+                    {
+                        case 0:
+                            Missions.CurrentMission = _atrOrigMissionDictionary[MissionListBox.SelectedIndex];
+                            break;
+                        case 1:
+                            Missions.CurrentMission = _harkOrigMissionDictionary[MissionListBox.SelectedIndex];
+                            break;
+                        case 2:
+                            Missions.CurrentMission = _ordOrigMissionDictionary[MissionListBox.SelectedIndex];
+                            break;
+                        default:
+                            MessageBox.Show($"Something went wrong when trying to access original Westwood campaign for side: {CurrentSideId}. Possibly trying to access Westwood campaign for a non-existing Westwood campaign (i.e. subHouses");
+                            return;
+                    }
                 }
+                else
+                {
+                    switch (CurrentSideId)
+                    {
+                        case 0: Missions.CurrentMission = Missions.AtreidesMissions[MissionListBox.SelectedIndex]; break;
+                        case 1: Missions.CurrentMission = Missions.HarkonnenMissions[MissionListBox.SelectedIndex]; break;
+                        case 2: Missions.CurrentMission = Missions.OrdosMissions[MissionListBox.SelectedIndex]; break;
+                        case 3: Missions.CurrentMission = Missions.EmperorMissions[MissionListBox.SelectedIndex]; break;
+                        case 4: Missions.CurrentMission = Missions.FremenMissions[MissionListBox.SelectedIndex]; break;
+                        case 5: Missions.CurrentMission = Missions.SmugglersMissions[MissionListBox.SelectedIndex]; break;
+                        case 6: Missions.CurrentMission = Missions.MercenariesMissions[MissionListBox.SelectedIndex]; break;
+                    }
+                }
+
                 BriefingRichTextBox.Text = Missions.CurrentMission.Briefing;
                 BriefingRichTextBox.ForeColor = BriefingRichTextBox.ForeColor;
                 Mission = Missions.CurrentMission;
@@ -121,42 +233,49 @@ namespace MissionLauncher.GUI
 
         private void AtreidesLabel_Click(object sender, EventArgs e)
         {
+            _onlyOriginals = false;
             if (Missions.AtreidesMissions.Count == 0) MessageBox.Show(NoMissionsAvailable);
             else ShowSelectMissionTab(0);
         }
 
         private void HarkonnenLabel_Click(object sender, EventArgs e)
         {
+            _onlyOriginals = false;
             if (Missions.HarkonnenMissions.Count == 0) MessageBox.Show(NoMissionsAvailable);
             else ShowSelectMissionTab(1);
         }
 
         private void OrdosLabel_Click(object sender, EventArgs e)
         {
+            _onlyOriginals = false;
             if (Missions.OrdosMissions.Count == 0) MessageBox.Show(NoMissionsAvailable);
             else ShowSelectMissionTab(2);
         }
 
         private void EmperorLabel_Click(object sender, EventArgs e)
         {
+            _onlyOriginals = false;
             if (Missions.EmperorMissions.Count == 0) MessageBox.Show(NoMissionsAvailable);
             else ShowSelectMissionTab(3);
         }
 
         private void FremenLabel_Click(object sender, EventArgs e)
         {
+            _onlyOriginals = false;
             if (Missions.FremenMissions.Count == 0) MessageBox.Show(NoMissionsAvailable);
             else ShowSelectMissionTab(4);
         }
 
         private void SmugglersLabel_Click(object sender, EventArgs e)
         {
+            _onlyOriginals = false;
             if (Missions.SmugglersMissions.Count == 0) MessageBox.Show(NoMissionsAvailable);
             else ShowSelectMissionTab(5);
         }
 
         private void MercenariesLabel_Click(object sender, EventArgs e)
         {
+            _onlyOriginals = false;
             if (Missions.MercenariesMissions.Count == 0) MessageBox.Show(NoMissionsAvailable);
             else ShowSelectMissionTab(6);
         }
@@ -281,6 +400,24 @@ namespace MissionLauncher.GUI
         private void BriefingRichTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void AtrOriginalLabel_Click(object sender, EventArgs e)
+        {
+            _onlyOriginals = true;
+            ShowSelectMissionTab(0, true);
+        }
+
+        private void OrdOriginalLabel_Click(object sender, EventArgs e)
+        {
+            _onlyOriginals = true;
+            ShowSelectMissionTab(2, true);
+        }
+
+        private void HarkOriginalLabel_Click(object sender, EventArgs e)
+        {
+            _onlyOriginals = true;
+            ShowSelectMissionTab(1, true);
         }
     }
 }

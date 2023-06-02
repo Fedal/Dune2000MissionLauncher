@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MissionLauncher</RootNamespace>
     <AssemblyName>MissionLauncher</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -94,6 +94,12 @@
     <Compile Include="GUI\AllMissionsForm.Designer.cs">
       <DependentUpon>AllMissionsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ButlerianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ButlerianForm.Designer.cs">
+      <DependentUpon>ButlerianForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Dune2000ScoreScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     <Compile Include="GUI\SummersForm.Designer.cs">
       <DependentUpon>SummersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\CoalitionOfNoblesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CoalitionOfNoblesForm.Designer.cs">
+      <DependentUpon>CoalitionOfNoblesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\WarOfTheLandsraadForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +175,9 @@
     <EmbeddedResource Include="GUI\AllMissionsForm.resx">
       <DependentUpon>AllMissionsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ButlerianForm.resx">
+      <DependentUpon>ButlerianForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Dune2000ScoreScreen.resx">
       <DependentUpon>Dune2000ScoreScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\SummersForm.resx">
       <DependentUpon>SummersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CoalitionOfNoblesForm.resx">
+      <DependentUpon>CoalitionOfNoblesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\WarOfTheLandsraadForm.resx">
       <DependentUpon>WarOfTheLandsraadForm.cs</DependentUpon>
@@ -246,8 +264,17 @@
     <None Include="Resources\S01V1.png" />
     <None Include="Resources\d2k_splash_menu_III.png" />
     <None Include="Resources\d2k_splash_menu_IV.png" />
+    <Content Include="Resources\CoalitionOfNobles\coalition_main.png" />
+    <Content Include="Resources\CoalitionOfNobles\coalition_selection.png" />
+    <Content Include="Resources\CoalitionOfNobles\wine button.png" />
     <Content Include="Resources\d2k_splash_menu_V.png" />
     <Content Include="Resources\MissionSelectBackground.jpg" />
+    <Content Include="Resources\Solstice\D2k_Splash_menu_draft_5.png" />
+    <Content Include="Resources\Solstice\image_four.png" />
+    <Content Include="Resources\Solstice\image_one.png" />
+    <Content Include="Resources\Solstice\image_three.png" />
+    <Content Include="Resources\Solstice\image_two.png" />
+    <Content Include="Resources\Solstice\solstice_aspectRatio.png" />
     <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormCampaignSelectionBackground.png" />
     <Content Include="Resources\WarOfAssassinsSandstorm\WarOfAssassinsSandstormMissionSelectionBackground.png" />
     <Content Include="Resources\WarOfTheLandsraad\atreides.png" />
@@ -259,6 +286,10 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Legacy\" />
+    <Folder Include="Resources\Butlerian\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

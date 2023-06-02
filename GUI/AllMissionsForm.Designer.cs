@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllMissionsForm));
             this.tTabControl1 = new FunkyFr3sh.Forms.TTabControl();
             this.HouseSelectionTab = new System.Windows.Forms.TabPage();
+            this.HarkOriginalLabel = new FunkyFr3sh.Forms.TLabel();
+            this.OrdOriginalLabel = new FunkyFr3sh.Forms.TLabel();
+            this.AtrOriginalLabel = new FunkyFr3sh.Forms.TLabel();
             this.MercenariesLabel = new FunkyFr3sh.Forms.TLabel();
             this.SmugglersLabel = new FunkyFr3sh.Forms.TLabel();
             this.FremenLabel = new FunkyFr3sh.Forms.TLabel();
@@ -79,8 +82,11 @@
             // 
             // HouseSelectionTab
             // 
-            this.HouseSelectionTab.BackgroundImage = global::MissionLauncher.Properties.Resources.MissionSelectBackground1;
+            this.HouseSelectionTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HouseSelectionTab.BackgroundImage")));
             this.HouseSelectionTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HouseSelectionTab.Controls.Add(this.HarkOriginalLabel);
+            this.HouseSelectionTab.Controls.Add(this.OrdOriginalLabel);
+            this.HouseSelectionTab.Controls.Add(this.AtrOriginalLabel);
             this.HouseSelectionTab.Controls.Add(this.MercenariesLabel);
             this.HouseSelectionTab.Controls.Add(this.SmugglersLabel);
             this.HouseSelectionTab.Controls.Add(this.FremenLabel);
@@ -90,13 +96,64 @@
             this.HouseSelectionTab.Controls.Add(this.AtreidesLabel);
             this.HouseSelectionTab.Cursor = System.Windows.Forms.Cursors.Default;
             this.HouseSelectionTab.ForeColor = System.Drawing.Color.Silver;
-            this.HouseSelectionTab.Location = new System.Drawing.Point(4, 25);
+            this.HouseSelectionTab.Location = new System.Drawing.Point(4, 29);
             this.HouseSelectionTab.Name = "HouseSelectionTab";
             this.HouseSelectionTab.Padding = new System.Windows.Forms.Padding(3);
-            this.HouseSelectionTab.Size = new System.Drawing.Size(1176, 751);
+            this.HouseSelectionTab.Size = new System.Drawing.Size(1176, 747);
             this.HouseSelectionTab.TabIndex = 0;
             this.HouseSelectionTab.Text = "HouseSelection";
             this.HouseSelectionTab.UseVisualStyleBackColor = true;
+            // 
+            // HarkOriginalLabel
+            // 
+            this.HarkOriginalLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.HarkOriginalLabel.AutoSize = true;
+            this.HarkOriginalLabel.BackColor = System.Drawing.Color.Transparent;
+            this.HarkOriginalLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HarkOriginalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HarkOriginalLabel.ForeColor = System.Drawing.Color.Silver;
+            this.HarkOriginalLabel.Location = new System.Drawing.Point(942, 70);
+            this.HarkOriginalLabel.Name = "HarkOriginalLabel";
+            this.HarkOriginalLabel.Size = new System.Drawing.Size(53, 16);
+            this.HarkOriginalLabel.TabIndex = 9;
+            this.HarkOriginalLabel.Text = "Original";
+            this.HarkOriginalLabel.TForeColor = System.Drawing.Color.Silver;
+            this.HarkOriginalLabel.TForeColorHover = System.Drawing.Color.Lime;
+            this.HarkOriginalLabel.Click += new System.EventHandler(this.HarkOriginalLabel_Click);
+            // 
+            // OrdOriginalLabel
+            // 
+            this.OrdOriginalLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.OrdOriginalLabel.AutoSize = true;
+            this.OrdOriginalLabel.BackColor = System.Drawing.Color.Transparent;
+            this.OrdOriginalLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OrdOriginalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrdOriginalLabel.ForeColor = System.Drawing.Color.Silver;
+            this.OrdOriginalLabel.Location = new System.Drawing.Point(566, 70);
+            this.OrdOriginalLabel.Name = "OrdOriginalLabel";
+            this.OrdOriginalLabel.Size = new System.Drawing.Size(53, 16);
+            this.OrdOriginalLabel.TabIndex = 8;
+            this.OrdOriginalLabel.Text = "Original";
+            this.OrdOriginalLabel.TForeColor = System.Drawing.Color.Silver;
+            this.OrdOriginalLabel.TForeColorHover = System.Drawing.Color.Lime;
+            this.OrdOriginalLabel.Click += new System.EventHandler(this.OrdOriginalLabel_Click);
+            // 
+            // AtrOriginalLabel
+            // 
+            this.AtrOriginalLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AtrOriginalLabel.AutoSize = true;
+            this.AtrOriginalLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AtrOriginalLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AtrOriginalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AtrOriginalLabel.ForeColor = System.Drawing.Color.Silver;
+            this.AtrOriginalLabel.Location = new System.Drawing.Point(174, 70);
+            this.AtrOriginalLabel.Name = "AtrOriginalLabel";
+            this.AtrOriginalLabel.Size = new System.Drawing.Size(53, 16);
+            this.AtrOriginalLabel.TabIndex = 7;
+            this.AtrOriginalLabel.Text = "Original";
+            this.AtrOriginalLabel.TForeColor = System.Drawing.Color.Silver;
+            this.AtrOriginalLabel.TForeColorHover = System.Drawing.Color.Lime;
+            this.AtrOriginalLabel.Click += new System.EventHandler(this.AtrOriginalLabel_Click);
             // 
             // MercenariesLabel
             // 
@@ -108,7 +165,7 @@
             this.MercenariesLabel.ForeColor = System.Drawing.Color.Silver;
             this.MercenariesLabel.Location = new System.Drawing.Point(1055, 692);
             this.MercenariesLabel.Name = "MercenariesLabel";
-            this.MercenariesLabel.Size = new System.Drawing.Size(83, 16);
+            this.MercenariesLabel.Size = new System.Drawing.Size(82, 16);
             this.MercenariesLabel.TabIndex = 6;
             this.MercenariesLabel.Text = "Mercenaries";
             this.MercenariesLabel.TForeColor = System.Drawing.Color.Silver;
@@ -125,7 +182,7 @@
             this.SmugglersLabel.ForeColor = System.Drawing.Color.Silver;
             this.SmugglersLabel.Location = new System.Drawing.Point(754, 692);
             this.SmugglersLabel.Name = "SmugglersLabel";
-            this.SmugglersLabel.Size = new System.Drawing.Size(73, 16);
+            this.SmugglersLabel.Size = new System.Drawing.Size(72, 16);
             this.SmugglersLabel.TabIndex = 5;
             this.SmugglersLabel.Text = "Smugglers";
             this.SmugglersLabel.TForeColor = System.Drawing.Color.Silver;
@@ -142,7 +199,7 @@
             this.FremenLabel.ForeColor = System.Drawing.Color.Silver;
             this.FremenLabel.Location = new System.Drawing.Point(372, 692);
             this.FremenLabel.Name = "FremenLabel";
-            this.FremenLabel.Size = new System.Drawing.Size(54, 16);
+            this.FremenLabel.Size = new System.Drawing.Size(53, 16);
             this.FremenLabel.TabIndex = 4;
             this.FremenLabel.Text = "Fremen";
             this.FremenLabel.TForeColor = System.Drawing.Color.Silver;
@@ -159,7 +216,7 @@
             this.EmperorLabel.ForeColor = System.Drawing.Color.Silver;
             this.EmperorLabel.Location = new System.Drawing.Point(47, 692);
             this.EmperorLabel.Name = "EmperorLabel";
-            this.EmperorLabel.Size = new System.Drawing.Size(60, 16);
+            this.EmperorLabel.Size = new System.Drawing.Size(59, 16);
             this.EmperorLabel.TabIndex = 3;
             this.EmperorLabel.Text = "Emperor";
             this.EmperorLabel.TForeColor = System.Drawing.Color.Silver;
@@ -176,7 +233,7 @@
             this.HarkonnenLabel.ForeColor = System.Drawing.Color.Silver;
             this.HarkonnenLabel.Location = new System.Drawing.Point(942, 588);
             this.HarkonnenLabel.Name = "HarkonnenLabel";
-            this.HarkonnenLabel.Size = new System.Drawing.Size(74, 16);
+            this.HarkonnenLabel.Size = new System.Drawing.Size(73, 16);
             this.HarkonnenLabel.TabIndex = 2;
             this.HarkonnenLabel.Text = "Harkonnen";
             this.HarkonnenLabel.TForeColor = System.Drawing.Color.Silver;
@@ -193,7 +250,7 @@
             this.OrdosLabel.ForeColor = System.Drawing.Color.Silver;
             this.OrdosLabel.Location = new System.Drawing.Point(566, 588);
             this.OrdosLabel.Name = "OrdosLabel";
-            this.OrdosLabel.Size = new System.Drawing.Size(45, 16);
+            this.OrdosLabel.Size = new System.Drawing.Size(44, 16);
             this.OrdosLabel.TabIndex = 1;
             this.OrdosLabel.Text = "Ordos";
             this.OrdosLabel.TForeColor = System.Drawing.Color.Silver;
@@ -210,7 +267,7 @@
             this.AtreidesLabel.ForeColor = System.Drawing.Color.Silver;
             this.AtreidesLabel.Location = new System.Drawing.Point(174, 588);
             this.AtreidesLabel.Name = "AtreidesLabel";
-            this.AtreidesLabel.Size = new System.Drawing.Size(58, 16);
+            this.AtreidesLabel.Size = new System.Drawing.Size(57, 16);
             this.AtreidesLabel.TabIndex = 0;
             this.AtreidesLabel.Text = "Atreides";
             this.AtreidesLabel.TForeColor = System.Drawing.Color.Silver;
@@ -228,10 +285,10 @@
             this.MissionSelectionTab.Controls.Add(this.BackToHouseSelectionLabel);
             this.MissionSelectionTab.Cursor = System.Windows.Forms.Cursors.Default;
             this.MissionSelectionTab.ForeColor = System.Drawing.Color.Silver;
-            this.MissionSelectionTab.Location = new System.Drawing.Point(4, 25);
+            this.MissionSelectionTab.Location = new System.Drawing.Point(4, 29);
             this.MissionSelectionTab.Name = "MissionSelectionTab";
             this.MissionSelectionTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MissionSelectionTab.Size = new System.Drawing.Size(1176, 751);
+            this.MissionSelectionTab.Size = new System.Drawing.Size(1176, 747);
             this.MissionSelectionTab.TabIndex = 1;
             this.MissionSelectionTab.Text = "MissionSelection";
             // 
@@ -314,9 +371,9 @@
             this.BriefingTab.Controls.Add(this.BackToMissionSelectionLabel);
             this.BriefingTab.Cursor = System.Windows.Forms.Cursors.Default;
             this.BriefingTab.ForeColor = System.Drawing.Color.Silver;
-            this.BriefingTab.Location = new System.Drawing.Point(4, 25);
+            this.BriefingTab.Location = new System.Drawing.Point(4, 29);
             this.BriefingTab.Name = "BriefingTab";
-            this.BriefingTab.Size = new System.Drawing.Size(1176, 751);
+            this.BriefingTab.Size = new System.Drawing.Size(1176, 747);
             this.BriefingTab.TabIndex = 8;
             this.BriefingTab.Text = "Briefing";
             // 
@@ -505,6 +562,9 @@
         private System.Windows.Forms.Button OpenIntelButton;
         private FunkyFr3sh.Forms.TLabel MapAvailableLabel;
         private FunkyFr3sh.Forms.TLabel IntelAvailableLabel;
+        private FunkyFr3sh.Forms.TLabel HarkOriginalLabel;
+        private FunkyFr3sh.Forms.TLabel OrdOriginalLabel;
+        private FunkyFr3sh.Forms.TLabel AtrOriginalLabel;
     }
 }
 
